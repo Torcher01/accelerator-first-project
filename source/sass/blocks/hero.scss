@@ -1,0 +1,48 @@
+.hero {
+  background: linear-gradient(90.00deg, rgb(28, 52, 119), rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.106%, rgb(115, 24, 75) 75.502%, rgb(180, 2, 42) 100%);
+}
+
+.hero__flex-wrapper {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 47px;
+}
+
+.hero__features {
+  color: #fff;
+  text-align: right;
+  line-height: 20px;
+  margin: 113px 0 0;
+}
+
+.hero__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+}
+
+.hero__city {
+  color: #fff;
+  font-family: Alumni Sans, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 2px 0 11px 102px;
+}
+
+.hero__header {
+  margin: 0 14px 0 0;
+  color: #fff;
+  font-family: Alumni Sans, Arial, sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 62px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.hero__subscription-button {
+  padding: 22px 90px;
+  margin-left: 15px;
+  margin-bottom: 33px;
+}
