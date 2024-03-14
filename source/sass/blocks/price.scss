@@ -1,0 +1,74 @@
+.price {
+  background-color: #f8f9fc;
+}
+
+.price__header {
+  margin: 0 0 26px 97px;
+  padding-top: 39px;
+}
+
+.price__time-choose {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #102654;
+  padding: 0;
+
+
+  &:not(:last-child) {
+    margin-right: 42px;
+  }
+}
+
+.price__buttons-wrapper {
+  padding-bottom: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.price__cards-wrapper {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.price__item-card {
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.price__item-card-header {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 49px;
+  margin: 0 0 20px 0;
+}
+
+.price__item-card-text {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 97px;
+}
+
+.price__item-card-price-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 79px;
+  margin-bottom: 36px;
+}
+
+.price__item-card-price {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 11px 0 0;
+}
+
+.price__item-card-buy {
+  color: #102654;
+  border-color: #102654;
+  padding: 25px 42px;
+  margin-left: 47px;
+  margin-bottom: 50px;
+}

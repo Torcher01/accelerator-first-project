@@ -11,7 +11,7 @@
         crossorigin="anonymous">
 </head>
 
-<body class="page-body">
+<body>
 <header class="page-header">
   <div class="container">
     <img class="page-header__logo" src="/__spritemap#sprite-header-logo-mobile" alt="Логотип" width="100" height="20">
@@ -42,12 +42,71 @@
       <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и здоровья.
         Тренажёрный
         зал оснащён всем необходимым современным оборудованием<br> для всех спортсменов.</p>
+      <picture>
+        <img class="about-us__gym-photo" src="img/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
+             height="280" srcset="img/gym-photo-2x.webp 2x">
+      </picture>
+      <img class="about-us__video" src="img/video.webp" alt="" width="100%" height="170">
     </div>
-    <picture>
-      <img class="about-us__gym-photo" src="img/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
-           height="280" srcset="img/gym-photo-2x.webp 2x">
-    </picture>
-    <img src="img/video.webp" alt="" width="100%" height="170">
+  </section>
+  <section class="price">
+    <div class="container">
+      <h2 class="section-header price__header">Абонементы</h2>
+      <div class="price__buttons-wrapper">
+        <button class="price__time-choose" type="button">1 месяц</button>
+        <button class="price__time-choose" type="button">6 месяцев</button>
+        <button class="price__time-choose" type="button">12 месяцев</button>
+      </div>
+      <div class="price__cards-wrapper">
+        <div class="price__item-card">
+          <h3 class="price__item-card-header">С тренером</h3>
+          <p class="price__item-card-text">12 занятий</p>
+          <div class="price__item-card-price-wrapper">
+            <p class="price__item-card-price">5000</p>
+            <svg width="24" height="33" aria-label="Знак рубля">
+              <use href="/__spritemap#sprite-ruble-icon"></use>
+            </svg>
+          </div>
+          <button class="button price__item-card-buy">Купить абонемент</button>
+        </div>
+        <div class="price__item-card">
+          <h3 class="price__item-card-header">Дневной</h3>
+          <p class="price__item-card-text">с 8:00 до 17:00</p>
+          <div class="price__item-card-price-wrapper">
+            <p class="price__item-card-price">1700</p>
+            <svg width="24" height="33" aria-label="Знак рубля">
+              <use href="/__spritemap#sprite-ruble-icon"></use>
+            </svg>
+          </div>
+          <button class="button price__item-card-buy">Купить абонемент</button>
+        </div>
+        <div class="price__item-card">
+          <h3 class="price__item-card-header">Полный день</h3>
+          <p class="price__item-card-text">с 8:00 до 22:00</p>
+          <div class="price__item-card-price-wrapper">
+            <p class="price__item-card-price">2700</p>
+            <svg width="24" height="33" aria-label="Знак рубля">
+              <use href="/__spritemap#sprite-ruble-icon"></use>
+            </svg>
+          </div>
+          <button class="button price__item-card-buy">Купить абонемент</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="event">
+    <div class="container">
+      <div class="event__wrapper">
+        <div class="event__header-date-wrapper">
+          <h2 class="event__header">SUPER GAMES</h2>
+          <div class="event__date-wrapper">
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </section>
 </main>
 <script type="module" src="js/main.js"></script>

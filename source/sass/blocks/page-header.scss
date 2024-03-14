@@ -9,9 +9,11 @@
 }
 
 .page-header__phone {
+  display: inline-block;
+  margin-bottom: 1px;
   font-size: 22px;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
-   vertical-align: bottom;
+  vertical-align: bottom;
 }
