@@ -35,7 +35,7 @@
 }
 
 .price__item-card {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 35px;
   position: relative;
 }
@@ -44,7 +44,7 @@
   font-size: 22px;
   text-align: center;
   padding-top: 49px;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .price__item-card-text {
@@ -67,13 +67,13 @@
   font-weight: 700;
   margin: 0 11px 0 0;
 
-  &:before {
+  &::before {
     content: attr(value);
     position: absolute;
     z-index: -1;
     top: -49px;
     left: -15px;
-    color: #E8E8E8;
+    color: #e8e8e8;
     font-size: 80px;
   }
 }

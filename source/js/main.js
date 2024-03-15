@@ -3,5 +3,5 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import {setPriceAttribute} from "./price-shadow.js";
+import {setPriceAttribute} from './price-shadow.js';
 setPriceAttribute();

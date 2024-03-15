@@ -1,6 +1,22 @@
 .hero {
-  background: linear-gradient(90.00deg, rgb(28, 52, 119), rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.106%, rgb(115, 24, 75) 75.502%, rgb(180, 2, 42) 100%);
+  background: linear-gradient(90deg, rgb(28, 52, 119), rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.11%, rgb(115, 24, 75) 75.5%, rgb(180, 2, 42) 100%);
   margin-bottom: 39px;
+}
+
+.hero__logo {
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-right: 38px;
+}
+
+.hero__phone {
+  display: inline-block;
+  margin-bottom: 2px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  vertical-align: bottom;
 }
 
 .hero__flex-wrapper {
@@ -10,7 +26,7 @@
 }
 
 .hero__features {
-  color: #fff;
+  color: #ffffff;
   text-align: right;
   line-height: 20px;
   margin: 113px 0 0;
@@ -23,8 +39,8 @@
 }
 
 .hero__city {
-  color: #fff;
-  font-family: Alumni Sans, Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 32px;
   font-weight: 600;
   margin: 1px 0 12px 102px;
@@ -32,8 +48,8 @@
 
 .hero__header {
   margin: 0 14px 0 0;
-  color: #fff;
-  font-family: Alumni Sans, Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 62px;
   font-weight: 800;
   line-height: 62px;
