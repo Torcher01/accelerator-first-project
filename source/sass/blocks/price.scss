@@ -37,6 +37,7 @@
 .price__item-card {
   background-color: #fff;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .price__item-card-header {
@@ -60,9 +61,25 @@
 }
 
 .price__item-card-price {
+  position: relative;
+  z-index: 1;
   font-size: 48px;
   font-weight: 700;
   margin: 0 11px 0 0;
+
+  &:before {
+    content: attr(value);
+    position: absolute;
+    z-index: -1;
+    top: -49px;
+    left: -15px;
+    color: #E8E8E8;
+    font-size: 80px;
+  }
+}
+
+.price__item-card-ruble-icon {
+  z-index: 1;
 }
 
 .price__item-card-buy {
