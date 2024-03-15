@@ -1,7 +1,91 @@
-.event {
-  margin-top: 20px;
+.event__wrapper {
+  position: relative;
+  background-color: #ed0233;
+  color: #fff;
+  margin: 0 15px;
 }
 
-.event__wrapper {
-  background-color: #ed0233;
+.event__header {
+  width: 120px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 24px 0 16px 40px;
+  padding-top: 40px;
+}
+
+.event__date,
+.event__time {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.event__date-day,
+.event__time-count {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.event__date-month,
+.event__date-year {
+  font-size: 12px;
+}
+
+.event__date,
+.event__date-day,
+.event__date-month,
+.event__date-year,
+.event__time,
+.event__time-count {
+  position: absolute;
+}
+
+.event__date {
+  left: 194px;
+  top: 41px;
+}
+
+.event__date-day {
+  left: 194px;
+  top: 63px;
+}
+
+.event__date-month {
+  left: 210px;
+  top: 65px;
+}
+
+.event__date-year {
+  left: 210px;
+  top: 77px;
+}
+
+.event__time {
+  left: 194px;
+  top: 95px;
+}
+
+.event__time-count {
+  left: 194px;
+  top: 117px;
+}
+
+.event__description {
+  width: 170px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 0 16px 40px;
+}
+
+.event__application-fill {
+  padding: 22px 50px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.event__image {
+  margin-left: 15px;
+  margin-bottom: 59px;
 }

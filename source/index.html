@@ -12,7 +12,9 @@
 </head>
 
 <body>
-<header></header>
+<header>
+  <h1 class="visually-hidden">Фитнес-центр "SUPERGYM"</h1>
+</header>
 <main>
   <section class="hero" data-test="hero">
     <div class="container">
@@ -26,7 +28,7 @@
         </p>
         <div class="hero__name-wrapper">
           <p class="hero__city">Омск</p>
-          <h1 class="hero__header">Фитнес центр</h1>
+          <h2 class="hero__header">Фитнес центр</h2>
         </div>
       </div>
       <button class="button hero__subscription-button" type="button">Купить абонемент</button>
@@ -34,20 +36,20 @@
   </section>
   <section class="about-us" data-test="about">
     <div class="container">
-      <h2 class="section-header about-us__header">Тренажёрный зал</h2>
-      <h3 class="about-us__item-header">Просторный зал площадью 900 кв/м</h3>
+      <h3 class="section-header about-us__header">Тренажёрный зал</h3>
+      <h4 class="about-us__item-header">Просторный зал площадью 900 кв/м</h4>
       <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и здоровья.
         Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
       <picture>
         <img class="about-us__gym-photo" src="img/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
-            height="280" srcset="img/gym-photo-2x.webp 2x">
+             height="280" srcset="img/gym-photo-2x.webp 2x">
       </picture>
       <img class="about-us__video" src="img/video.webp" alt="" width="320" height="170">
     </div>
   </section>
   <section class="price" data-test="price">
     <div class="container">
-      <h2 class="section-header price__header">Абонементы</h2>
+      <h3 class="section-header price__header">Абонементы</h3>
       <div class="price__buttons-wrapper">
         <button class="price__time-choose" type="button">1 месяц</button>
         <button class="price__time-choose" type="button">6 месяцев</button>
@@ -55,7 +57,7 @@
       </div>
       <div class="price__cards-wrapper">
         <div class="price__item-card">
-          <h3 class="price__item-card-header">С тренером</h3>
+          <h4 class="price__item-card-header">С тренером</h4>
           <p class="price__item-card-text">12 занятий</p>
           <div class="price__item-card-price-wrapper">
             <p class="price__item-card-price">5000</p>
@@ -66,7 +68,7 @@
           <button class="button price__item-card-buy" type="button">Купить абонемент</button>
         </div>
         <div class="price__item-card">
-          <h3 class="price__item-card-header">Дневной</h3>
+          <h4 class="price__item-card-header">Дневной</h4>
           <p class="price__item-card-text">с 8:00 до 17:00</p>
           <div class="price__item-card-price-wrapper">
             <p class="price__item-card-price">1700</p>
@@ -77,7 +79,7 @@
           <button class="button price__item-card-buy" type="button">Купить абонемент</button>
         </div>
         <div class="price__item-card">
-          <h3 class="price__item-card-header">Полный день</h3>
+          <h4 class="price__item-card-header">Полный день</h4>
           <p class="price__item-card-text">с 8:00 до 22:00</p>
           <div class="price__item-card-price-wrapper">
             <p class="price__item-card-price">2700</p>
@@ -93,19 +95,50 @@
   <section class="event" data-test="games">
     <div class="container">
       <div class="event__wrapper">
-        <div class="event__header-date-wrapper">
-          <h2 class="event__header">SUPER GAMES</h2>
-          <div class="event__date-wrapper">
-
-          </div>
+        <h3 class="event__header">SUPER GAMES</h3>
+        <span class="event__date">Дата</span>
+        <span class="event__date-day">7</span>
+        <span class="event__date-month">Марта</span>
+        <span class="event__date-year">2019</span>
+        <span class="event__time">Время</span>
+        <span class="event__time-count">12:00</span>
+        <p class="event__description">Ежегодные соревнования по CrossFit</p>
+        <button class="button event__application-fill" type="button">Заполнить заявку</button>
+      </div>
+      <picture>
+        <img class="event__image" src="img/event-img-1x.webp" width="290" height="290"
+             alt="Спортсмен отжимается в облаке магнезии" srcset="img/event-img-2x.webp 2x">
+      </picture>
+    </div>
+  </section>
+  <section class="juri" data-test="juri">
+    <div class="container">
+      <h3 class="section-header juri__header">Жюри</h3>
+      <img class="juri__pashkov-photo" src="img/juri/pashkov-1x.webp" width="227" height="280"
+           alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
+      <span class="juri__name">Александр Пашков</span>
+    </div>
+  </section>
+  <section class="features" data-test="features">
+    <div class="container">
+      <h3 class="section-header features__header">Наши преимущества</h3>
+      <div class="features__item">
+        <span class="features__item-number">900</span>
+        <span class="features__item-number-unit">кв/м</span>
+        <div class="features__item-flex-wrapper">
+          <span class="features__item-name">Площадь</span>
+          <p class="features__item-text">Занимайтесь без очередей и толкучки</p>
         </div>
-
-
+      </div>
+      <div class="features__item">
+        <span class="features__item-number features__item-number--cars">70</span>
+        <span class="features__item-number-unit">машин</span>
+        <span class="features__item-name">Собственная парковка</span>
+        <p class="features__item-text features__item-text--cars">Вы всегда найдёте место для своей машины на нашей парковке</p>
       </div>
     </div>
   </section>
 </main>
 <script type="module" src="js/main.js"></script>
 </body>
-
 </html>
