@@ -4,16 +4,21 @@
 
 .features__header {
   margin: 0 0 32px 54px;
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .features__item {
   margin-left: 15px;
   text-align: center;
+  margin-bottom: 30px;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.features__item--simulators {
+  background-color: #1C3374;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-bottom: 35px;
 }
 
 .features__item-flex-wrapper {
@@ -25,7 +30,7 @@
   display: inline-block;
   font-size: 64px;
   font-weight: 700;
-  background: linear-gradient(128.66deg, rgb(209, 10, 66),rgb(0, 65, 202));
+  background: linear-gradient(128.66deg, rgb(209, 10, 66), rgb(0, 65, 202));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -37,6 +42,19 @@
   margin-bottom: -2px;
 }
 
+.features__item-number--simulators {
+  background: none;
+  -webkit-text-fill-color: #fff;
+  padding-top: 24px;
+  margin-left: 0;
+  margin-bottom: -1px;
+}
+
+.features__item-number--years {
+  margin-top: -1px;
+  margin-bottom: -2px;
+}
+
 .features__item-number-unit {
   display: block;
   font-size: 14px;
@@ -45,12 +63,33 @@
   margin-bottom: 13px;
 }
 
+.features__item-number-unit--simulators {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 0;
+  margin-bottom: 19px;
+}
+
 .features__item-name {
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
   margin-left: -16px;
   margin-bottom: 12px;
+}
+
+.features__item-name--simulators {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  width: 160px;
+  margin-left: 0;
+  margin-bottom: 39px;
+}
+
+.features__item-name--comfort {
+  margin-bottom: 14px;
 }
 
 .features__item-text {
@@ -64,4 +103,15 @@
 
 .features__item-text--cars {
   margin-left: -15px;
+}
+
+.features__item-text--comfort {
+  display: block;
+}
+
+.features__item-text--years {
+  display: block;
+  width: 200px;
+  margin-left: 45px;
+  padding-bottom: 40px;
 }
