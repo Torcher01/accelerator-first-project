@@ -1,0 +1,77 @@
+.faq {
+  background-color: #F8F9FC;
+}
+
+.faq__header {
+  margin: 0 0 31px 66px;
+  padding-top: 69px;
+}
+
+.faq__buttons-wrapper {
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 9px 0;
+  margin-left: 15px;
+  margin-bottom: 56px;
+}
+
+.faq__button {
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  width: 140px;
+  padding: 13px 10px;
+}
+
+.faq__item {
+  margin-left: 15px;
+  margin-bottom: 41px;
+}
+
+.faq__item--schedule {
+  margin-bottom: 21px;
+}
+
+.faq__item--coolers {
+  margin-bottom: 21px;
+}
+
+.faq__item--trainers {
+  padding-bottom: 71px;
+}
+
+.faq__item-header {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 50px 20px 0;
+  width: 210px;
+}
+
+.faq__item-header--trainers {
+  width: 240px;
+  margin-right: 20px;
+}
+
+.faq__item-wrapper {
+  display: flex;
+}
+
+.faq__item-expand {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: -15px;
+}
+
+.faq__item-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  width: 290px;
+}
