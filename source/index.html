@@ -18,7 +18,7 @@
 <main>
   <section class="hero" data-test="hero">
     <div class="container">
-      <img class="hero__logo" src="/__spritemap#sprite-header-logo-mobile" alt="Логотип" width="100" height="20">
+      <img class="hero__logo" src="/__spritemap#sprite-header-logo-view" alt="Логотип" width="100" height="20">
       <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
       <div class="hero__flex-wrapper">
         <p class="hero__features">
@@ -207,7 +207,7 @@
           </button>
         </div>
         <p class="faq__item-text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
-         договор. При покупке абонемента онлайн, анкета<br>также заполняется онлайн и договор придёт вам на почту.</p>
+          договор. При покупке абонемента онлайн, анкета<br>также заполняется онлайн и договор придёт вам на почту.</p>
       </div>
       <div class="faq__item faq__item--schedule">
         <div class="faq__item-wrapper">
@@ -233,7 +233,8 @@
       </div>
       <div class="faq__item faq__item--trainers">
         <div class="faq__item-wrapper">
-          <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова<br>их квалификация?</h4>
+          <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова<br>их
+            квалификация?</h4>
           <button class="faq__item-expand" type="button">
             <svg class="faq__item-expand-icon" width="30" height="30" role="img" aria-label="Открыть категорию">
               <use href="/__spritemap#sprite-faq-button-expand"></use>
@@ -244,7 +245,77 @@
       </div>
     </div>
   </section>
+  <section class="reviews" data-test="reviews">
+    <div class="container">
+      <h2 class="section-header reviews__header">Отзывы</h2>
+      <div class="reviews__review">
+        <picture>
+          <img class="reviews__review-avatar" src="img/reviews-img-1x.webp" width="68" height="68"
+               alt="Аватарка написавшего отзыв" srcset="img/reviews-img-2x.webp 2x">
+        </picture>
+        <span class="reviews__review-name">Анна Орлова</span>
+        <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
+         обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
+      </div>
+    </div>
+  </section>
+  <section class="form" data-test="form">
+    <div class="container">
+      <div class="form__wrapper">
+        <h3 class="section-header form__header">Бесплатное занятие</h3>
+        <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__input-wrapper">
+            <label><input class="form__input" type="text" name="name" id="name" placeholder="Имя" required></label>
+            <label><input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон" required></label>
+          </div>
+          <button class="button form__submit-button" type="submit">отправить</button>
+        </form>
+      </div>
+      <div class="form__contacts contacts">
+        <h3 class="contacts__header">Контакты</h3>
+        <div class="contacts__item">
+          <span class="contacts__item-name">Адрес:</span>
+          <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__item-name">График работы:</span>
+          <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
+        </div>
+        <div class="contacts__item contacts__item--tel">
+          <span class="contacts__item-name">Телефон:</span>
+          <span class="contacts__item-text">8 800 555-55-55</span>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__item-name">Email:</span>
+          <span class="contacts__item-text">oмск@supergym.ru</span>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+<footer class="page-footer">
+  <div class="container">
+    <img class="page-footer__logo" src="/__spritemap#sprite-footer-logo-view" alt="Логотип" width="100" height="20">
+    <div class="page-footer__links">
+      <a class="page-footer__link" href="#">Услуги</a>
+      <a class="page-footer__link" href="#">Абонементы</a>
+      <a class="page-footer__link" href="#">Акции</a>
+      <a class="page-footer__link" href="#">Тренеры</a>
+      <a class="page-footer__link" href="#">Расписание</a>
+    </div>
+    <div class="page-footer__social-links">
+      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Вконтакте">
+        <use href="/__spritemap#sprite-vk"></use>
+      </svg>
+      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Одноклассники">
+        <use href="/__spritemap#sprite-ok"></use>
+      </svg>
+      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Reddit">
+        <use href="/__spritemap#sprite-reddit"></use>
+      </svg>
+    </div>
+  </div>
+</footer>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

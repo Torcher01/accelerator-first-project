@@ -1,0 +1,50 @@
+.form__form {
+  margin-bottom: 35px;
+}
+
+.form__wrapper {
+  background-color: #102654;
+  color: #fff;
+}
+
+.form__header {
+  display: inline-block;
+  margin: 69px 0 36px 15px;
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__input {
+  width: 290px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  padding: 0 0 6px;
+  margin-bottom: 40px;
+
+  &::placeholder {
+    color: #74819c;
+  }
+}
+
+.form__input--tel {
+  margin-bottom: 36px;
+}
+
+.form__submit-button {
+  padding: 22px 113px;
+  margin-left: 15px;
+  margin-bottom: 70px;
+}
+
+.form__contacts {
+  margin-left: 15px;
+  margin-bottom: 41px;
+}

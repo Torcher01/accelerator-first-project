@@ -1,0 +1,27 @@
+.contacts__header {
+  font-family: Alumni Sans, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 33px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.contacts__item--tel {
+  margin-bottom: 27px;
+}
+
+.contacts__item-name {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.contacts__item-text {
+  font-size: 14px;
+  font-weight: 400;
+}
