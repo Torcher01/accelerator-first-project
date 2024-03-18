@@ -42,7 +42,7 @@
         Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
       <picture>
         <img class="about-us__gym-photo" src="img/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
-             height="280" srcset="img/gym-photo-2x.webp 2x">
+            height="280" srcset="img/gym-photo-2x.webp 2x">
       </picture>
       <img class="about-us__video" src="img/video.webp" alt="" width="320" height="170">
     </div>
@@ -107,7 +107,7 @@
       </div>
       <picture>
         <img class="event__image" src="img/event-img-1x.webp" width="290" height="290"
-             alt="Спортсмен отжимается в облаке магнезии" srcset="img/event-img-2x.webp 2x">
+            alt="Спортсмен отжимается в облаке магнезии" srcset="img/event-img-2x.webp 2x">
       </picture>
     </div>
   </section>
@@ -115,7 +115,7 @@
     <div class="container">
       <h3 class="section-header juri__header">Жюри</h3>
       <img class="juri__pashkov-photo" src="img/juri/pashkov-1x.webp" width="227" height="280"
-           alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
+          alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
       <span class="juri__name">Александр Пашков</span>
     </div>
   </section>
@@ -174,7 +174,7 @@
       </div>
       <picture>
         <img class="offers__girl-photo" src="img/offers-girl-photo-1x.webp" width="320" height="360"
-             alt="Фотография девушки в костюме для тренировки" srcset="img/offers-girl-photo-2x.webp 2x">
+            alt="Фотография девушки в костюме для тренировки" srcset="img/offers-girl-photo-2x.webp 2x">
       </picture>
       <div class="offers__offer">
         <h4 class="offers__offer-header">Месяц бесплатно</h4>
@@ -201,7 +201,8 @@
         <div class="faq__item-wrapper">
           <h4 class="faq__item-header">Как стать членом фитнес-центра?</h4>
           <button class="faq__item-expand" type="button">
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img" aria-label="Открыть категорию">
+            <span class="visually-hidden">Открыть категорию</span>
+            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
               <use href="/__spritemap#sprite-faq-button-expand"></use>
             </svg>
           </button>
@@ -213,7 +214,8 @@
         <div class="faq__item-wrapper">
           <h4 class="faq__item-header">Где можно посмотреть расписание?</h4>
           <button class="faq__item-expand" type="button">
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img" aria-label="Открыть категорию">
+            <span class="visually-hidden">Открыть категорию</span>
+            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
               <use href="/__spritemap#sprite-faq-button-expand"></use>
             </svg>
           </button>
@@ -224,7 +226,8 @@
         <div class="faq__item-wrapper">
           <h4 class="faq__item-header">Есть кулеры в центре? Предоставляются полотенца?</h4>
           <button class="faq__item-expand" type="button">
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img" aria-label="Открыть категорию">
+            <span class="visually-hidden">Открыть категорию</span>
+            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
               <use href="/__spritemap#sprite-faq-button-expand"></use>
             </svg>
           </button>
@@ -236,7 +239,8 @@
           <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова<br>их
             квалификация?</h4>
           <button class="faq__item-expand" type="button">
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img" aria-label="Открыть категорию">
+            <span class="visually-hidden">Открыть категорию</span>
+            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
               <use href="/__spritemap#sprite-faq-button-expand"></use>
             </svg>
           </button>
@@ -251,11 +255,11 @@
       <div class="reviews__review">
         <picture>
           <img class="reviews__review-avatar" src="img/reviews-img-1x.webp" width="68" height="68"
-               alt="Аватарка написавшего отзыв" srcset="img/reviews-img-2x.webp 2x">
+              alt="Аватарка написавшего отзыв" srcset="img/reviews-img-2x.webp 2x">
         </picture>
         <span class="reviews__review-name">Анна Орлова</span>
         <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
-         обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
+        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
       </div>
     </div>
   </section>
@@ -265,8 +269,14 @@
         <h3 class="section-header form__header">Бесплатное занятие</h3>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__input-wrapper">
-            <label><input class="form__input" type="text" name="name" id="name" placeholder="Имя" required></label>
-            <label><input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон" required></label>
+            <label>
+              <span class="visually-hidden">Введите имя</span>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
+            </label>
+            <label>
+              <span class="visually-hidden">Введите телефон</span>
+              <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+            </label>
           </div>
           <button class="button form__submit-button" type="submit">отправить</button>
         </form>
@@ -293,7 +303,7 @@
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer" data-test="footer">
   <div class="container">
     <img class="page-footer__logo" src="/__spritemap#sprite-footer-logo-view" alt="Логотип" width="100" height="20">
     <div class="page-footer__links">

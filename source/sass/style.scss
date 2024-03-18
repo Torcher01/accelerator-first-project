@@ -1,6 +1,7 @@
-//vendor
+// vendor
 @import "vendor/normalize";
-//global
+
+// global
 @import "global/visually-hidden";
 @import "global/fonts";
 @import "global/global";
@@ -8,7 +9,8 @@
 @import "global/container";
 @import "global/button";
 @import "global/section-header";
-//blocks
+
+// blocks
 @import "blocks/page-header";
 @import "blocks/hero";
 @import "blocks/about-us";
