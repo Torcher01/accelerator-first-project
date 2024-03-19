@@ -114,9 +114,11 @@
   <section class="juri" data-test="juri">
     <div class="container">
       <h3 class="section-header juri__header">Жюри</h3>
-      <img class="juri__pashkov-photo" src="img/juri/pashkov-1x.webp" width="227" height="280"
-          alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
-      <span class="juri__name">Александр Пашков</span>
+      <div class="juri__member" tabindex="1" aria-label="Член жюри">
+        <img class="juri__pashkov-photo" src="img/juri/pashkov-1x.webp" width="227" height="280"
+             alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
+        <span class="juri__name">Александр Пашков</span>
+      </div>
     </div>
   </section>
   <section class="features" data-test="features">
@@ -202,8 +204,8 @@
           <h4 class="faq__item-header">Как стать членом фитнес-центра?</h4>
           <button class="faq__item-expand" type="button">
             <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
-              <use href="/__spritemap#sprite-faq-button-expand"></use>
+            <svg class="faq__item-expand-icon" width="14" height="14">
+              <use href="/__spritemap#sprite-faq-button-plus"></use>
             </svg>
           </button>
         </div>
@@ -215,8 +217,8 @@
           <h4 class="faq__item-header">Где можно посмотреть расписание?</h4>
           <button class="faq__item-expand" type="button">
             <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
-              <use href="/__spritemap#sprite-faq-button-expand"></use>
+            <svg class="faq__item-expand-icon" width="14" height="14">
+              <use href="/__spritemap#sprite-faq-button-plus"></use>
             </svg>
           </button>
         </div>
@@ -225,10 +227,10 @@
       <div class="faq__item faq__item--coolers">
         <div class="faq__item-wrapper">
           <h4 class="faq__item-header">Есть кулеры в центре? Предоставляются полотенца?</h4>
-          <button class="faq__item-expand" type="button">
+          <button class="faq__item-expand faq__item-expand--coolers" type="button">
             <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
-              <use href="/__spritemap#sprite-faq-button-expand"></use>
+            <svg class="faq__item-expand-icon" width="14" height="14">
+              <use href="/__spritemap#sprite-faq-button-plus"></use>
             </svg>
           </button>
         </div>
@@ -238,10 +240,10 @@
         <div class="faq__item-wrapper">
           <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова<br>их
             квалификация?</h4>
-          <button class="faq__item-expand" type="button">
+          <button class="faq__item-expand faq__item-expand--trainers" type="button">
             <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="30" height="30" role="img">
-              <use href="/__spritemap#sprite-faq-button-expand"></use>
+            <svg class="faq__item-expand-icon" width="14" height="14">
+              <use href="/__spritemap#sprite-faq-button-plus"></use>
             </svg>
           </button>
         </div>
@@ -293,11 +295,11 @@
         </div>
         <div class="contacts__item contacts__item--tel">
           <span class="contacts__item-name">Телефон:</span>
-          <span class="contacts__item-text">8 800 555-55-55</span>
+          <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
         </div>
         <div class="contacts__item">
           <span class="contacts__item-name">Email:</span>
-          <span class="contacts__item-text">oмск@supergym.ru</span>
+          <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
         </div>
       </div>
     </div>
@@ -314,15 +316,21 @@
       <a class="page-footer__link" href="#">Расписание</a>
     </div>
     <div class="page-footer__social-links">
-      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Вконтакте">
-        <use href="/__spritemap#sprite-vk"></use>
-      </svg>
-      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Одноклассники">
+      <a class="page-footer__social-link" href="#">
+        <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Вконтакте">
+          <use href="/__spritemap#sprite-vk"></use>
+        </svg>
+      </a>
+      <a class="page-footer__social-link" href="#">
+        <svg class="page-footer__social-image page-footer__social-image--ok" width="10" height="27" role="img" aria-label="Одноклассники">
         <use href="/__spritemap#sprite-ok"></use>
       </svg>
-      <svg class="page-footer__social-links-item" width="25" height="25" role="img" aria-label="Reddit">
-        <use href="/__spritemap#sprite-reddit"></use>
-      </svg>
+      </a>
+      <a class="page-footer__social-link" href="#">
+        <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Reddit">
+          <use href="/__spritemap#sprite-reddit"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </footer>

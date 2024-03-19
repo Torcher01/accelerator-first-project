@@ -1,5 +1,6 @@
 .faq {
   background-color: #f8f9fc;
+  padding-bottom: 70px;
 }
 
 .faq__header {
@@ -12,10 +13,11 @@
   grid-template-columns: 150px auto;
   gap: 9px 0;
   margin-left: 15px;
-  margin-bottom: 56px;
+  margin-bottom: 35px;
 }
 
 .faq__button {
+  color: #102654;
   border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
   cursor: pointer;
@@ -23,23 +25,49 @@
   font-weight: 400;
   width: 140px;
   padding: 13px 10px;
+
+  &:hover {
+    border-color: #102654;
+  }
+
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:disabled {
+    border-color: rgba(16, 38, 84, 0.2);
+    color: #c8c9cc;
+    background-color: transparent;
+  }
+}
+
+.faq__button--active {
+  border: none;
+  padding: 14px 11px;
+  background-image: linear-gradient(110deg, rgb(237, 2, 51) 16.78%,rgb(0, 62, 183) 96.94%);
+  color: #fff;
 }
 
 .faq__item {
   margin-left: 15px;
-  margin-bottom: 41px;
+  margin-bottom: 0px;
+  border-top: 1px solid #74819c;
+  width: 290px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .faq__item--schedule {
-  margin-bottom: 21px;
+  margin-bottom: -20px;
 }
 
 .faq__item--coolers {
-  margin-bottom: 21px;
+  margin-bottom: -20px;
 }
 
 .faq__item--trainers {
-  padding-bottom: 71px;
+  border-bottom: 1px solid #74819c;
+  padding-bottom: 0;
 }
 
 .faq__item-header {
@@ -61,11 +89,49 @@
 }
 
 .faq__item-expand {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background-color: transparent;
-  border: none;
+  border: 1px solid #1C3374;
   cursor: pointer;
   padding: 0;
-  margin-top: -15px;
+  margin-top: 5px;
+
+  &:hover {
+    background-color: #1c3374;
+  }
+
+  &:focus {
+    background-color: #74819c;
+  }
+
+  &:hover .faq__item-expand-icon,
+  &:focus .faq__item-expand-icon{
+    stroke: #fff;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: rgba(28, 51, 116, 0.3);
+  }
+
+  &:disabled .faq__item-expand-icon {
+    stroke: rgba(28, 51, 116, 0.3);
+  }
+}
+
+.faq__item-expand--coolers {
+  margin-top: 15px;
+}
+
+.faq__item-expand--trainers {
+  margin-top: 15px;
+}
+
+.faq__item-expand-icon {
+  stroke: #1c3374;
+  margin-top: 5px;
 }
 
 .faq__item-text {

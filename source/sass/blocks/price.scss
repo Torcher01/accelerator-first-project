@@ -11,17 +11,35 @@
   background-color: transparent;
   border: none;
   font-size: 16px;
-  color: #102654;
-  padding: 0;
-
+  color: rgba(16, 38, 84, 0.5);
+  margin-bottom: -2px;
+  padding: 0 0 14px;
+  border-bottom: 2px solid transparent;
 
   &:not(:last-child) {
     margin-right: 42px;
   }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+    border-color: #787878;
+  }
+
+  &:focus,
+  &:active {
+    color: #102654;
+  }
+
+  &:focus {
+    border-color: #102654;
+  }
+
+  &:active {
+    border-color: #ed0233;
+  }
 }
 
 .price__buttons-wrapper {
-  padding-bottom: 14px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -91,4 +109,34 @@
   padding: 25px 42px;
   margin-left: 47px;
   margin-bottom: 50px;
+
+  &:hover,
+  &:focus {
+    color: #fff
+  }
+
+  &:hover {
+    border: none;
+    padding: 27px 44px;
+  }
+
+  &:focus {
+    background-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%,rgba(0, 62, 183, 0.8) 96.59%);
+  }
+
+  &:hover,
+  &:active {
+    background-image: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%,rgb(0, 62, 183) 96.59%);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:disabled {
+    border: 2px solid rgba(16, 38, 84, 0.3);
+    background-image: none;
+    color: rgba(16, 38, 84, 0.3);
+    padding: 25px 42px;
+  }
 }

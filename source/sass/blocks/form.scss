@@ -9,7 +9,7 @@
 
 .form__header {
   display: inline-block;
-  margin: 69px 0 36px 15px;
+  margin: 69px 0 30px 15px;
 }
 
 .form__input-wrapper {
@@ -25,12 +25,30 @@
   color: #ffffff;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #74819c;
-  padding: 0 0 6px;
-  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 0 6px 0;
+  margin-bottom: 34px;
 
   &::placeholder {
-    color: #74819c;
+    color: rgba(255, 255, 255, 0.7)
+  }
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: 5px;
+    border: none;
+    padding-bottom: 7px;
+  }
+
+  &:disabled {
+    outline: none;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #74819c;
+    opacity: 0.4;
   }
 }
 

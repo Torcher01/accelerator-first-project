@@ -83,6 +83,30 @@
   padding: 22px 50px;
   margin-left: 40px;
   margin-bottom: 40px;
+
+  &:hover,
+  &:active {
+    background-color: #fff;
+  }
+
+  &:hover {
+    color: #103aae;
+  }
+
+  &:active {
+    color: #102654;
+  }
+
+  &:focus {
+    border-color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.5;
+  }
 }
 
 .event__image {

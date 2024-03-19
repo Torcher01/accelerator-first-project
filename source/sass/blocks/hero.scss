@@ -17,6 +17,25 @@
   text-decoration: none;
   color: #ffffff;
   vertical-align: bottom;
+
+  &:hover,
+  &:focus {
+    color: #1c3374;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #102654;
+    border-bottom: 1px solid #102654;
+  }
+
+  &:disabled {
+    color: #f8f9fc;
+    border: none;
+  }
 }
 
 .hero__flex-wrapper {
@@ -62,4 +81,28 @@
   padding: 22px 90px;
   margin-left: 15px;
   margin-bottom: 32px;
+
+  &:hover,
+  &:active {
+    background-color: #fff;
+  }
+
+  &:hover {
+    color: #103aae;
+  }
+
+  &:active {
+    color: #102654;
+  }
+
+  &:focus {
+    border-color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.5;
+  }
 }
