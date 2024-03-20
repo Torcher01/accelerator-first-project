@@ -3,3 +3,9 @@
   font-size: 32px;
   font-weight: 600;
 }
+
+@media (min-width: $tablet-width) {
+  .section-header {
+    font-size: 42px;
+  }
+}

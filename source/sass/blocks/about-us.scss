@@ -1,11 +1,11 @@
 .about-us__header {
-  margin: 0 0 8px 15px;
+  margin: 38px 0 8px 15px;
 }
 
 .about-us__item-header {
   font-size: 18px;
   font-weight: 400;
-  margin: 0 0 36px 15px;
+  margin: 0 0 37px 15px;
 }
 
 .about-us p {
@@ -21,4 +21,42 @@
 
 .about-us__video {
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__header {
+    margin: 58px 0 14px 263px;
+  }
+
+  .about-us__item-header {
+    font-size: 20px;
+    margin: 0 0 34px 230px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 500px;
+    text-align: center;
+    margin: 0 0 36px 134px;
+  }
+
+  .about-us br {
+    display: none;
+  }
+
+  .about-us__gym-photo {
+    width: 678px;
+    height: 345px;
+    margin: 0 0 135px 45px;
+  }
+
+  .about-us__video {
+    position: absolute;
+    left: 249px;
+    top: 488px;
+    width: 270px;
+    height: 170px;
+    margin: 0;
+  }
 }

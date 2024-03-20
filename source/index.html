@@ -32,6 +32,11 @@
         </div>
       </div>
       <button class="button hero__subscription-button" type="button">Купить абонемент</button>
+      <picture>
+        <img class="hero__man-photo" src="img/tablet/hero-img-1x.webp"
+            alt="Фотография мужчины в футболке со знаком Супермена" width="324" height="390"
+            srcset="img/tablet/hero-img-2x.webp 2x">
+      </picture>
     </div>
   </section>
   <section class="about-us" data-test="about">
@@ -41,10 +46,11 @@
       <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и здоровья.
         Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
       <picture>
-        <img class="about-us__gym-photo" src="img/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
-            height="280" srcset="img/gym-photo-2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/tablet/gym-photo-1x.webp 1x, img/tablet/gym-photo-2x.webp 2x">
+        <img class="about-us__gym-photo" src="img/mobile/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
+             height="280" srcset="img/mobile/gym-photo-2x.webp 2x">
       </picture>
-      <img class="about-us__video" src="img/video.webp" alt="" width="320" height="170">
+      <img class="about-us__video" src="img/mobile/video.webp" alt="" width="320" height="170">
     </div>
   </section>
   <section class="price" data-test="price">
@@ -106,8 +112,8 @@
         <button class="button event__application-fill" type="button">Заполнить заявку</button>
       </div>
       <picture>
-        <img class="event__image" src="img/event-img-1x.webp" width="290" height="290"
-            alt="Спортсмен отжимается в облаке магнезии" srcset="img/event-img-2x.webp 2x">
+        <img class="event__image" src="img/mobile/event-img-1x.webp" width="290" height="290"
+             alt="Спортсмен отжимается в облаке магнезии" srcset="img/mobile/event-img-2x.webp 2x">
       </picture>
     </div>
   </section>
@@ -175,8 +181,8 @@
         <a class="offers__year-offer-more" href="#">подробнее</a>
       </div>
       <picture>
-        <img class="offers__girl-photo" src="img/offers-girl-photo-1x.webp" width="320" height="360"
-            alt="Фотография девушки в костюме для тренировки" srcset="img/offers-girl-photo-2x.webp 2x">
+        <img class="offers__girl-photo" src="img/mobile/offers-girl-photo-1x.webp" width="320" height="360"
+             alt="Фотография девушки в костюме для тренировки" srcset="img/mobile/offers-girl-photo-2x.webp 2x">
       </picture>
       <div class="offers__offer">
         <h4 class="offers__offer-header">Месяц бесплатно</h4>
@@ -256,12 +262,12 @@
       <h2 class="section-header reviews__header">Отзывы</h2>
       <div class="reviews__review">
         <picture>
-          <img class="reviews__review-avatar" src="img/reviews-img-1x.webp" width="68" height="68"
-              alt="Аватарка написавшего отзыв" srcset="img/reviews-img-2x.webp 2x">
+          <img class="reviews__review-avatar" src="img/mobile/reviews-img-1x.webp" width="68" height="68"
+               alt="Аватарка написавшего отзыв" srcset="img/mobile/reviews-img-2x.webp 2x">
         </picture>
         <span class="reviews__review-name">Анна Орлова</span>
         <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
-        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
+          обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
       </div>
     </div>
   </section>
@@ -322,9 +328,10 @@
         </svg>
       </a>
       <a class="page-footer__social-link" href="#">
-        <svg class="page-footer__social-image page-footer__social-image--ok" width="10" height="27" role="img" aria-label="Одноклассники">
-        <use href="/__spritemap#sprite-ok"></use>
-      </svg>
+        <svg class="page-footer__social-image page-footer__social-image--ok" width="10" height="27" role="img"
+             aria-label="Одноклассники">
+          <use href="/__spritemap#sprite-ok"></use>
+        </svg>
       </a>
       <a class="page-footer__social-link" href="#">
         <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Reddit">

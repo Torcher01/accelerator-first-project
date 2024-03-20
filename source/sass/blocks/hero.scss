@@ -1,6 +1,5 @@
 .hero {
   background: linear-gradient(90deg, rgb(28, 52, 119), rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.11%, rgb(115, 24, 75) 75.5%, rgb(180, 2, 42) 100%);
-  margin-bottom: 39px;
 }
 
 .hero__logo {
@@ -104,5 +103,66 @@
     background-color: transparent;
     color: #fff;
     opacity: 0.5;
+  }
+}
+
+.hero__man-photo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__logo {
+    width: 110px;
+    height: 22px;
+    margin-top: 31px;
+    margin-left: 45px;
+    margin-right: 403px;
+  }
+
+  .hero__phone {
+    font-size: 24px;
+  }
+
+  .hero__flex-wrapper {
+    padding-top: 56px;
+    margin-bottom: 50px;
+  }
+
+  .hero__name-wrapper {
+    margin: 0;
+  }
+
+  .hero__city {
+    font-size: 42px;
+    margin: 0 0 6px 143px;
+  }
+
+  .hero__header {
+    font-size: 72px;
+    line-height: 85px;
+    margin: 0 0 0 28px;
+    width: 185px;
+    text-align: right;
+    letter-spacing: 2px;
+  }
+
+  .hero__features {
+    line-height: 22px;
+    width: 115px;
+    margin: 135px 0 0 43px;
+  }
+
+  .hero__man-photo {
+    display: block;
+    position: absolute;
+    right: 45px;
+    top: 84px;
+  }
+
+  .hero__subscription-button {
+    width: 185px;
+    padding: 20px;
+    margin-left: 184px;
+    margin-bottom: 131px;
   }
 }
