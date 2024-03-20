@@ -60,6 +60,30 @@
   padding: 22px 113px;
   margin-left: 15px;
   margin-bottom: 70px;
+
+  &:hover,
+  &:active {
+    background-color: #fff;
+  }
+
+  &:hover {
+    color: #103aae;
+  }
+
+  &:active {
+    color: #102654;
+  }
+
+  &:focus {
+    border-color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.5;
+  }
 }
 
 .form__contacts {
