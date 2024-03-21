@@ -34,8 +34,8 @@
       <button class="button hero__subscription-button" type="button">Купить абонемент</button>
       <picture>
         <img class="hero__man-photo" src="img/tablet/hero-img-1x.webp"
-            alt="Фотография мужчины в футболке со знаком Супермена" width="324" height="390"
-            srcset="img/tablet/hero-img-2x.webp 2x">
+             alt="Фотография мужчины в футболке со знаком Супермена" width="324" height="390"
+             srcset="img/tablet/hero-img-2x.webp 2x">
       </picture>
     </div>
   </section>
@@ -47,14 +47,15 @@
         Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
       <picture>
         <source media="(min-width: 768px)" srcset="img/tablet/gym-photo-1x.webp 1x, img/tablet/gym-photo-2x.webp 2x">
-        <img class="about-us__gym-photo" src="img/mobile/gym-photo-1x.webp" alt="Фотография тренажёрного зала" width="320"
+        <img class="about-us__gym-photo" src="img/mobile/gym-photo-1x.webp" alt="Фотография тренажёрного зала"
+             width="320"
              height="280" srcset="img/mobile/gym-photo-2x.webp 2x">
       </picture>
       <img class="about-us__video" src="img/mobile/video.webp" alt="" width="320" height="170">
     </div>
   </section>
   <section class="price" data-test="price">
-    <div class="container">
+    <div class="container container--price">
       <h3 class="section-header price__header">Абонементы</h3>
       <div class="price__buttons-wrapper">
         <button class="price__time-choose" type="button">1 месяц</button>
@@ -96,25 +97,32 @@
           <button class="button price__item-card-buy" type="button">Купить абонемент</button>
         </div>
       </div>
+      <picture>
+        <img class="price__weight-plates-img" src="img/tablet/weight-plates-1x.webp" width="403" height="422"
+             alt="Фотография блинов на штангу"
+             srcset="img/tablet/weight-plates-2x.webp 2x">
+      </picture>
     </div>
   </section>
   <section class="event" data-test="games">
     <div class="container">
       <div class="event__wrapper">
-        <h3 class="event__header">SUPER GAMES</h3>
-        <span class="event__date">Дата</span>
-        <span class="event__date-day">7</span>
-        <span class="event__date-month">Марта</span>
-        <span class="event__date-year">2019</span>
-        <span class="event__time">Время</span>
-        <span class="event__time-count">12:00</span>
-        <p class="event__description">Ежегодные соревнования по CrossFit</p>
-        <button class="button event__application-fill" type="button">Заполнить заявку</button>
+        <div class="event__date-wrapper">
+          <h3 class="event__header">SUPER GAMES</h3>
+          <span class="event__date">Дата</span>
+          <span class="event__date-day">7</span>
+          <span class="event__date-month">Марта</span>
+          <span class="event__date-year">2019</span>
+          <span class="event__time">Время</span>
+          <span class="event__time-count">12:00</span>
+          <p class="event__description">Ежегодные соревнования по CrossFit</p>
+          <button class="button event__application-fill" type="button">Заполнить заявку</button>
+        </div>
+        <picture>
+          <img class="event__image" src="img/mobile/event-img-1x.webp" width="290" height="290"
+               alt="Спортсмен отжимается в облаке магнезии" srcset="img/mobile/event-img-2x.webp 2x">
+        </picture>
       </div>
-      <picture>
-        <img class="event__image" src="img/mobile/event-img-1x.webp" width="290" height="290"
-             alt="Спортсмен отжимается в облаке магнезии" srcset="img/mobile/event-img-2x.webp 2x">
-      </picture>
     </div>
   </section>
   <section class="juri" data-test="juri">

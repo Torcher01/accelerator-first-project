@@ -140,3 +140,89 @@
     padding: 25px 42px;
   }
 }
+
+.price__weight-plates-img {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .price__header {
+    margin: 0 0 32px 107px;
+    padding-top: 58px;
+  }
+
+  .price__buttons-wrapper {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .price__time-choose {
+    font-size: 18px;
+    padding-bottom: 4px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  .price__cards-wrapper {
+    padding-top: 45px;
+    padding-bottom: 61px;
+    margin: 0;
+  }
+
+  .price__item-card {
+    z-index: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .price__item-card-header {
+    font-size: 24px;
+    padding-top: 63px;
+    margin-bottom: 24px;
+  }
+
+  .price__item-card-text {
+    font-size: 16px;
+    margin-bottom: 95px;
+  }
+
+  .price__item-card-price {
+    font-size: 60px;
+    margin-right: 15px;
+
+    &:before {
+      font-size: 100px;
+      top: -54px;
+      left: -18px;
+    }
+  }
+
+  .price__item-card-price-wrapper {
+    margin-left: 107px;
+    margin-bottom: 32px;
+  }
+
+  .price__item-card-ruble-icon {
+    width: 30px;
+    height: 42px;
+  }
+
+  .price__item-card-buy {
+    padding-left: 70px;
+    padding-right: 69px;
+    margin-left: 65px;
+    margin-bottom: 65px;
+  }
+
+  .price__weight-plates-img {
+    display: block;
+    position: absolute;
+    left: 249px;
+    bottom: -34px;
+    z-index: 0;
+  }
+}

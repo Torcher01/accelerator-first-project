@@ -1,4 +1,4 @@
-.event__wrapper {
+.event__date-wrapper {
   position: relative;
   background-color: #ed0233;
   color: #ffffff;
@@ -112,4 +112,18 @@
 .event__image {
   margin-left: 15px;
   margin-bottom: 59px;
+}
+
+@media (min-width: $tablet-width) {
+  .event__wrapper {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  .event__header {
+    font-size: 48px;
+    line-height: 54px;
+    margin-top: 0;
+  }
 }
