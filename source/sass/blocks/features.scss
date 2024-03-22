@@ -114,3 +114,101 @@
   margin-left: 45px;
   padding-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding-bottom: 2px;
+  }
+
+  .features__header {
+    padding-top: 59px;
+    margin-left: 246px;
+    margin-bottom: 41px;
+  }
+
+  .features__item-wrapper {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .features__item {
+    display: flex;
+    margin-left: 12px;
+    text-align: left;
+  }
+
+  .features__item--square {
+    margin-right: 58px;
+  }
+
+  .features__item--simulators {
+    width: 320px;
+    margin-top: 12px;
+    margin-left: 392px;
+  }
+
+  .features__item--experience {
+    margin-left: 30px;
+  }
+
+  .features__item-number-wrapper {
+    margin-right: 10px;
+  }
+
+  .features__item-number {
+    font-size: 70px;
+    margin-bottom: -2px;
+  }
+
+  .features__item-number--simulators {
+    padding-top: 30px;
+    margin-left: 107px;
+    margin-bottom: 18px;
+  }
+
+  .features__item-number-unit {
+    margin-left: -16px;
+    margin-bottom: 0;
+  }
+
+  .features__item-number-unit--simulators {
+    font-size: 24px;
+    margin-left: 98px;
+    margin-bottom: 19px;
+  }
+
+  .features__item-name {
+    font-size: 20px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+
+  .features__item-name--simulators {
+    font-size: 16px;
+    line-height: 24px;
+    width: 180px;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 35px;
+  }
+
+  .features__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 4px;
+    width: 240px;
+  }
+
+  .features__item-text--square {
+    width: 180px;
+  }
+
+  .features__item-text--comfort {
+    width: 220px;
+  }
+
+  .features__item-text--years {
+    width: 230px;
+  }
+}
