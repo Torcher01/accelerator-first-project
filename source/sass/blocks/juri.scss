@@ -1,25 +1,122 @@
-.juri {
-  position: relative;
-}
-
 .juri__header {
   margin: 0 0 17px 128px;
 }
 
 .juri__member {
+  display: none;
   position: relative;
-}
-
-.juri__pashkov-photo {
   margin-left: 46px;
   margin-bottom: 35px;
 }
 
+.juri__member-photo {
+  position: relative;
+  width: 227px;
+  height: 280px;
+}
+
 .juri__name {
+  display: none;
   position: absolute;
   left: 72px;
-  top: 232px;
+  bottom: 27px;
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.juri__switcher {
+  display: none;
+}
+
+.juri__member--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .juri__flex-wrapper {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 55px;
+  }
+
+  .juri__header {
+    font-size: 54px;
+    margin-top: 52px;
+    margin-left: 332px;
+    margin-bottom: 42px;
+  }
+
+  .juri__member {
+    margin: 0 17px 0 23px;
+  }
+
+  .juri__member-photo {
+    width: 260px;
+    height: 300px;
+  }
+
+  .juri__member--mobile {
+    display: none;
+  }
+
+  .juri__member--tablet {
+    display: block;
+  }
+
+  .juri__name {
+    left: 65px;
+  }
+
+  .juri__name--lavrov {
+    left: 55px;
+  }
+
+  .juri__switcher {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    margin-top: 124px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid #102654;
+    }
+
+    &:focus {
+      background-color: #e8e8e8;
+    }
+
+    &:active {
+      background-color: #102654;
+    }
+
+    &:active .juri__switcher-icon {
+      stroke: #fff;
+    }
+
+    &:disabled {
+      border: none;
+      background-color: transparent;
+      stroke: rgba(16, 38, 84, 0.3);
+    }
+  }
+
+  .juri__switcher--right {
+    margin-left: 6px;
+  }
+
+  .juri__switcher-icon {
+    stroke: #102654;
+  }
+
+  .juri__switcher-icon--right {
+    transform: rotate(180deg);
+  }
 }

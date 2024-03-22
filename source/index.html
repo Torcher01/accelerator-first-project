@@ -107,18 +107,27 @@
   <section class="event" data-test="games">
     <div class="container">
       <div class="event__wrapper">
-        <div class="event__date-wrapper">
-          <h3 class="event__header">SUPER GAMES</h3>
-          <span class="event__date">Дата</span>
-          <span class="event__date-day">7</span>
-          <span class="event__date-month">Марта</span>
-          <span class="event__date-year">2019</span>
-          <span class="event__time">Время</span>
-          <span class="event__time-count">12:00</span>
+        <div class="event__content-wrapper">
+          <div class="event__flex-wrapper">
+            <h3 class="event__header">SUPER GAMES</h3>
+            <div class="event__date-wrapper">
+              <span class="event__date">Дата</span>
+              <div class="event__flex-wrapper">
+                <span class="event__date-day">7</span>
+                <div class="event__flex-wrapper event__flex-wrapper--column">
+                  <span class="event__date-month">Марта</span>
+                  <span class="event__date-year">2019</span>
+                </div>
+              </div>
+              <span class="event__time">Время</span>
+              <span class="event__time-count">12:00</span>
+            </div>
+          </div>
           <p class="event__description">Ежегодные соревнования по CrossFit</p>
           <button class="button event__application-fill" type="button">Заполнить заявку</button>
         </div>
         <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/event-img-1x.webp 1x, img/tablet/event-img-2x.webp 2x">
           <img class="event__image" src="img/mobile/event-img-1x.webp" width="290" height="290"
                alt="Спортсмен отжимается в облаке магнезии" srcset="img/mobile/event-img-2x.webp 2x">
         </picture>
@@ -128,10 +137,41 @@
   <section class="juri" data-test="juri">
     <div class="container">
       <h3 class="section-header juri__header">Жюри</h3>
-      <div class="juri__member" tabindex="1" aria-label="Член жюри">
-        <img class="juri__pashkov-photo" src="img/juri/pashkov-1x.webp" width="227" height="280"
-             alt="Член жюри Александр Пашков" srcset="img/juri/pashkov-2x.webp 2x">
-        <span class="juri__name">Александр Пашков</span>
+      <div class="juri__flex-wrapper">
+        <button class="juri__switcher">
+          <svg class="juri__switcher-icon" width="16" height="32" aria-label="Переключить влево">
+            <use href="/__spritemap#sprite-juri-arrow-icon"></use>
+          </svg>
+        </button>
+        <div class="juri__member juri__member--tablet" tabindex="1" aria-label="Член жюри">
+          <img class="juri__member-photo" src="img/juri/anna-pavlova-photo-1x.webp" width="260" height="300"
+               alt="Фотография члена жюри" srcset="img/juri/anna-pavlova-photo-2x.webp 2x">
+          <span class="juri__name juri__member--tablet">Анна Павлова</span>
+        </div>
+        <div class="juri__member juri__member--tablet" tabindex="1" aria-label="Член жюри">
+          <img class="juri__member-photo" src="img/juri/alexey-lavrov-photo-1x.webp" width="260" height="300"
+               alt="Фотография члена жюри" srcset="img/juri/alexey-lavrov-photo-2x.webp 2x">
+          <span class="juri__name juri__name--lavrov juri__member--tablet">Алексей Лавров</span>
+        </div>
+        <div class="juri__member juri__member--mobile" tabindex="1" aria-label="Член жюри">
+          <picture>
+            <source media="(min-width: 768px)"
+                    srcset="img/juri/alexandr-pashkov-photo-1x.webp 1x, img/juri/alexandr-pashkov-photo-2x.webp 2x">
+            <img class="juri__member-photo" src="img/juri/alexandr-pashkov-mobile-1x.webp" width="227" height="280"
+                 alt="Фотография члена жюри" srcset="img/juri/alexandr-pashkov-mobile-2x.webp 2x">
+          </picture>
+          <span class="juri__name juri__member--mobile">Александр Пашков</span>
+        </div>
+        <div class="juri__member juri__member--desktop" tabindex="1" aria-label="Член жюри">
+          <img class="juri__member-photo" src="img/juri/maria-ketova-photo-1x.webp" width="260" height="300"
+               alt="Фотография члена жюри" srcset="img/juri/maria-ketova-photo-2x.webp 2x">
+          <span class="juri__name juri__member--desktop">Мария Кетова</span>
+        </div>
+        <button class="juri__switcher juri__switcher--right">
+          <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32" aria-label="Переключить влево">
+            <use href="/__spritemap#sprite-juri-arrow-icon"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
