@@ -162,3 +162,86 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .offers {
+    margin-bottom: 60px;
+  }
+
+  .offers__flex-wrapper {
+    display: flex;
+    margin-left: 45px;
+  }
+
+  .offers-header {
+    margin: 58px 0 31px 344px;
+    padding: 0;
+  }
+
+  .offers__year-offer-header {
+    font-size: 24px;
+    margin: 38px 0 13px 26px;
+    padding: 0;
+  }
+
+  .offers__year-offer-price {
+    font-size: 70px;
+    margin-left: 25px;
+    margin-bottom: 35px;
+  }
+
+  .offers__year-offer-text {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    width: 190px;
+    margin-left: 26px;
+    margin-right: 62px;
+    margin-bottom: 160px;
+  }
+
+  .offers__year-offer-more {
+    margin-left: 26px;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+  }
+
+  .offers__girl-photo {
+    width: 400px;
+    height: 462px;
+    margin-bottom: -4px;
+  }
+
+  .offers__offer {
+    margin: 35px 0 0 0;
+    padding-right: 56px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .offers__offer-header {
+    font-size: 26px;
+    margin-left: 21px;
+    margin-bottom: 7px;
+  }
+
+  .offers__offer-text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 234px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+
+  .offers__offer-text--discount {
+    margin-bottom: 54px;
+  }
+
+  .offers__offer-more-info {
+    margin-left: 20px;
+  }
+}

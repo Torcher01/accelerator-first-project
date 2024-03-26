@@ -141,3 +141,82 @@
   margin: 0;
   width: 290px;
 }
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding-bottom: 60px;
+  }
+
+  .faq__header {
+    margin-left: 262px;
+    margin-bottom: 40px;
+    padding-top: 58px;
+  }
+
+  .faq__buttons-wrapper {
+    display: flex;
+    gap: 0;
+    margin-left: 45px;
+    margin-bottom: 45px;
+  }
+
+  .faq__button {
+    font-size: 18px;
+    width: 162px;
+    padding: 16px 11px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .faq__item {
+    width: auto;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-bottom: 25px;
+  }
+
+  .faq__item--schedule {
+    margin-bottom: -10px;
+  }
+
+  .faq__item--coolers {
+    margin-bottom: -10px;
+  }
+
+  .faq__item--trainers {
+    padding-top: 11px;
+    padding-bottom: 6px;
+  }
+
+  .faq__item-header {
+    font-size: 22px;
+    line-height: 22px;
+    width: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 18px;
+  }
+
+  .faq__item-text {
+    font-size: 18px;
+    line-height: 24px;
+    width: 550px;
+  }
+
+  .faq__item-expand {
+    width: 40px;
+    height: 40px;
+  }
+
+  .faq__item-expand--coolers {
+    margin-top: 5px;
+  }
+
+  .faq__item-expand-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}

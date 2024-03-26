@@ -168,7 +168,8 @@
           <span class="juri__name juri__member--desktop">Мария Кетова</span>
         </div>
         <button class="juri__switcher juri__switcher--right">
-          <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32" aria-label="Переключить влево">
+          <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32"
+               aria-label="Переключить влево">
             <use href="/__spritemap#sprite-juri-arrow-icon"></use>
           </svg>
         </button>
@@ -240,25 +241,30 @@
   <section class="offers" data-test="offers">
     <div class="container">
       <h3 class="section-header offers-header">Акции</h3>
-      <div class="offers__year-offer">
-        <h4 class="offers__year-offer-header">Год</h4>
-        <span class="offers__year-offer-price">4999</span>
-        <p class="offers__year-offer-text">Безлимитный абонемент в тренажёрный зал</p>
-        <a class="offers__year-offer-more" href="#">подробнее</a>
+      <div class="offers__flex-wrapper">
+        <div class="offers__year-offer">
+          <h4 class="offers__year-offer-header">Год</h4>
+          <span class="offers__year-offer-price">4999</span>
+          <p class="offers__year-offer-text">Безлимитный абонемент в тренажёрный зал</p>
+          <a class="offers__year-offer-more" href="#">подробнее</a>
+        </div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/offers-girl-photo-1x.webp 1x, img/tablet/offers-girl-photo-2x.webp 2x">
+          <img class="offers__girl-photo" src="img/mobile/offers-girl-photo-1x.webp" width="320" height="360"
+               alt="Фотография девушки в костюме для тренировки" srcset="img/mobile/offers-girl-photo-2x.webp 2x">
+        </picture>
       </div>
-      <picture>
-        <img class="offers__girl-photo" src="img/mobile/offers-girl-photo-1x.webp" width="320" height="360"
-             alt="Фотография девушки в костюме для тренировки" srcset="img/mobile/offers-girl-photo-2x.webp 2x">
-      </picture>
-      <div class="offers__offer">
-        <h4 class="offers__offer-header">Месяц бесплатно</h4>
-        <p class="offers__offer-text">Приведи друга, получи абонемент в подарок</p>
-        <a class="offers__offer-more-info" href="#">подробнее</a>
-      </div>
-      <div class="offers__offer">
-        <h4 class="offers__offer-header offers__offer-header--discount">Скидка 20%</h4>
-        <p class="offers__offer-text offers__offer-text--discount">Корпоративный фитнес с командой</p>
-        <a class="offers__offer-more-info" href="#">подробнее</a>
+      <div class="offers__flex-wrapper">
+        <div class="offers__offer">
+          <h4 class="offers__offer-header">Месяц бесплатно</h4>
+          <p class="offers__offer-text">Приведи друга, получи абонемент в подарок</p>
+          <a class="offers__offer-more-info" href="#">подробнее</a>
+        </div>
+        <div class="offers__offer">
+          <h4 class="offers__offer-header offers__offer-header--discount">Скидка 20%</h4>
+          <p class="offers__offer-text offers__offer-text--discount">Корпоративный фитнес с командой</p>
+          <a class="offers__offer-more-info" href="#">подробнее</a>
+        </div>
       </div>
     </div>
   </section>
