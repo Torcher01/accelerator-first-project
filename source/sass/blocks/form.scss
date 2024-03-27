@@ -90,3 +90,43 @@
   margin-left: 15px;
   margin-bottom: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__header {
+    font-size: 54px;
+    margin: 56px 0 30px 211px;
+  }
+
+  .form__form {
+    margin-left: 165px;
+    margin-bottom: 56px;
+  }
+
+  .form__input-wrapper {
+    flex-direction: row;
+    margin: 0 0 1px;
+  }
+
+  .form__submit-button {
+    margin-left: 0;
+  }
+
+  .form__input {
+    margin-right: 31px;
+    width: 204px;
+  }
+
+  .form__input--tel {
+    margin: 0;
+  }
+
+  .form__submit-button {
+    padding: 26px 188px 25px;
+    margin-bottom: 59px;
+  }
+
+  .form__contacts {
+    margin-left: 164px;
+    margin-bottom: 45px;
+  }
+}

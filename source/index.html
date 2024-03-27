@@ -140,7 +140,7 @@
       <div class="juri__flex-wrapper">
         <button class="juri__switcher">
           <svg class="juri__switcher-icon" width="16" height="32" aria-label="Переключить влево">
-            <use href="/__spritemap#sprite-juri-arrow-icon"></use>
+            <use href="/__spritemap#sprite-switcher-icon"></use>
           </svg>
         </button>
         <div class="juri__member juri__member--tablet" tabindex="1" aria-label="Член жюри">
@@ -170,7 +170,7 @@
         <button class="juri__switcher juri__switcher--right">
           <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32"
                aria-label="Переключить влево">
-            <use href="/__spritemap#sprite-juri-arrow-icon"></use>
+            <use href="/__spritemap#sprite-switcher-icon"></use>
           </svg>
         </button>
       </div>
@@ -332,15 +332,28 @@
   <section class="reviews" data-test="reviews">
     <div class="container">
       <h2 class="section-header reviews__header">Отзывы</h2>
+      <button class="reviews__switcher">
+        <svg class="reviews__switcher-icon" width="16" height="32"
+             aria-label="Переключить влево">
+          <use href="/__spritemap#sprite-switcher-icon"></use>
+        </svg>
+      </button>
       <div class="reviews__review">
         <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/reviews-img-1x.webp 1x, img/tablet/reviews-img-2x.webp 2x">
           <img class="reviews__review-avatar" src="img/mobile/reviews-img-1x.webp" width="68" height="68"
                alt="Аватарка написавшего отзыв" srcset="img/mobile/reviews-img-2x.webp 2x">
         </picture>
         <span class="reviews__review-name">Анна Орлова</span>
         <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
-          обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
+          обновляют, персонал дружелюбный.<br class="reviews__review-text-tablet-br"> Зал просторный, даже в вечернее время<br>нет очередей»</p>
       </div>
+      <button class="reviews__switcher reviews__switcher--right">
+        <svg class="reviews__switcher-icon reviews__switcher-icon--right" width="16" height="32"
+             aria-label="Переключить вправо">
+          <use href="/__spritemap#sprite-switcher-icon"></use>
+        </svg>
+      </button>
     </div>
   </section>
   <section class="form" data-test="form">
@@ -363,21 +376,27 @@
       </div>
       <div class="form__contacts contacts">
         <h3 class="contacts__header">Контакты</h3>
-        <div class="contacts__item">
-          <span class="contacts__item-name">Адрес:</span>
-          <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
-        </div>
-        <div class="contacts__item">
-          <span class="contacts__item-name">График работы:</span>
-          <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
-        </div>
-        <div class="contacts__item contacts__item--tel">
-          <span class="contacts__item-name">Телефон:</span>
-          <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
-        </div>
-        <div class="contacts__item">
-          <span class="contacts__item-name">Email:</span>
-          <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+        <div class="contacts__flex-wrapper">
+          <div class="contacts__left">
+            <div class="contacts__item">
+              <span class="contacts__item-name">Адрес:</span>
+              <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__item-name">График работы:</span>
+              <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
+            </div>
+          </div>
+          <div class="contacts__right">
+            <div class="contacts__item contacts__item--tel">
+              <span class="contacts__item-name">Телефон:</span>
+              <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__item-name">Email:</span>
+              <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -385,31 +404,33 @@
 </main>
 <footer class="page-footer" data-test="footer">
   <div class="container">
-    <img class="page-footer__logo" src="/__spritemap#sprite-footer-logo-view" alt="Логотип" width="100" height="20">
-    <div class="page-footer__links">
-      <a class="page-footer__link" href="#">Услуги</a>
-      <a class="page-footer__link" href="#">Абонементы</a>
-      <a class="page-footer__link" href="#">Акции</a>
-      <a class="page-footer__link" href="#">Тренеры</a>
-      <a class="page-footer__link" href="#">Расписание</a>
-    </div>
-    <div class="page-footer__social-links">
-      <a class="page-footer__social-link" href="#">
-        <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Вконтакте">
-          <use href="/__spritemap#sprite-vk"></use>
-        </svg>
-      </a>
-      <a class="page-footer__social-link" href="#">
-        <svg class="page-footer__social-image page-footer__social-image--ok" width="10" height="27" role="img"
-             aria-label="Одноклассники">
-          <use href="/__spritemap#sprite-ok"></use>
-        </svg>
-      </a>
-      <a class="page-footer__social-link" href="#">
-        <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Reddit">
-          <use href="/__spritemap#sprite-reddit"></use>
-        </svg>
-      </a>
+    <div class="page-footer__flex-wrapper">
+      <img class="page-footer__logo" src="/__spritemap#sprite-footer-logo-view" alt="Логотип" width="100" height="20">
+      <div class="page-footer__links">
+        <a class="page-footer__link" href="#">Услуги</a>
+        <a class="page-footer__link page-footer__link--subscription" href="#">Абонементы</a>
+        <a class="page-footer__link" href="#">Акции</a>
+        <a class="page-footer__link" href="#">Тренеры</a>
+        <a class="page-footer__link" href="#">Расписание</a>
+      </div>
+      <div class="page-footer__social-links">
+        <a class="page-footer__social-link" href="#">
+          <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Вконтакте">
+            <use href="/__spritemap#sprite-vk"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-link" href="#">
+          <svg class="page-footer__social-image page-footer__social-image--ok" width="10" height="27" role="img"
+               aria-label="Одноклассники">
+            <use href="/__spritemap#sprite-ok"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-link" href="#">
+          <svg class="page-footer__social-image" width="14" height="27" role="img" aria-label="Reddit">
+            <use href="/__spritemap#sprite-reddit"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </footer>

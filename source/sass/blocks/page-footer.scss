@@ -100,3 +100,49 @@
 .page-footer__social-image--ok {
   margin-left: 8px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-bottom: 40px;
+  }
+
+  .page-footer__flex-wrapper {
+    display: flex;
+  }
+
+  .page-footer__logo {
+    width: 110px;
+    height: 22px;
+    margin: 45px 36px 0 45px;
+  }
+
+  .page-footer__links {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .page-footer__link {
+    margin-bottom: 0;
+    margin-right: 31px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .page-footer__link--subscription {
+    margin-right: 30px;
+  }
+
+  .page-footer__social-links {
+    margin-left: 36px;
+    margin-top: 45px;
+    padding-bottom: 0;
+  }
+
+  .page-footer__social-link {
+    margin-right: 12px;
+  }
+}

@@ -36,3 +36,103 @@
   width: 190px;
   text-align: center;
 }
+
+.reviews__switcher {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 60px;
+  }
+
+  .reviews__header {
+    font-size: 54px;
+    margin-top: 56px;
+    margin-left: 313px;
+    margin-bottom: 30px;
+  }
+
+  .reviews__review {
+    margin-left: 134px;
+    margin-right: 134px;
+  }
+
+  .reviews__review-name {
+    display: block;
+    font-size: 22px;
+    margin-top: -91px;
+    margin-left: 150px;
+    margin-bottom: 18px;
+  }
+
+  .reviews__review-text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 320px;
+    text-align: left;
+    margin-left: 150px;
+    padding-bottom: 40px;
+  }
+
+  .reviews__review-text-tablet-br {
+    display: inline;
+  }
+
+  .reviews__review-avatar {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  .reviews__switcher {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    left: 25px;
+    top: 188px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid #102654;
+    }
+
+    &:focus {
+      background-color: #e8e8e8;
+    }
+
+    &:active {
+      background-color: #102654;
+    }
+
+    &:active .juri__switcher-icon {
+      stroke: #fff;
+    }
+
+    &:disabled {
+      border: none;
+      background-color: transparent;
+      stroke: rgba(16, 38, 84, 0.3);
+    }
+  }
+
+  .reviews__switcher--right {
+    left: 687px;
+  }
+
+  .reviews__switcher-icon {
+    stroke: #102654;
+  }
+
+  .reviews__switcher-icon--right {
+    transform: rotate(180deg);
+  }
+}

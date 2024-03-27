@@ -27,3 +27,39 @@
   color: #102654;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__header {
+    font-size: 54px;
+    margin-left: 137px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__left {
+    position: relative;
+    margin-right: 81px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 220px;
+      top: 2px;
+      width: 1px;
+      height: 117px;
+      background-color: #74819C;
+    }
+  }
+
+  .contacts__item {
+    margin-bottom: 16px;
+  }
+
+  .contacts__item-name {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+
+  .contacts__flex-wrapper {
+    display: flex;
+  }
+}
