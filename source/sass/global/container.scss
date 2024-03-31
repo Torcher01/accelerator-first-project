@@ -14,10 +14,15 @@
     width: 380px;
   }
 }
-/*
+
 @media (min-width: $desktop-width) {
   .container {
     width: 1366px;
+    overflow: hidden;
+  }
+
+  .container--features {
+    overflow: visible;
   }
 }
-*/
+

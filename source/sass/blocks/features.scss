@@ -1,4 +1,5 @@
 .features {
+
   background-color: #f8f9fc;
 }
 
@@ -143,8 +144,7 @@
 
   .features__item--simulators {
     width: 320px;
-    margin-top: 12px;
-    margin-left: 392px;
+    margin: 12px auto 35px;
   }
 
   .features__item--experience {
@@ -210,5 +210,112 @@
 
   .features__item-text--years {
     width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__relative-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .container-1 {
+    margin: 0 auto;
+    width: 1366px;
+  }
+
+  .features__header {
+    font-size: 54px;
+    padding-top: 97px;
+    margin-left: 506px;
+  }
+
+  .features__item {
+    margin-bottom: 83px;
+    margin-right: 446px;
+    overflow: visible;
+  }
+
+  .features__item--experience {
+    margin-left: 0;
+  }
+
+  .features__item--square {
+    margin-right: 474px;
+  }
+
+  .features__item-wrapper {
+    margin-left: 107px;
+  }
+
+  .features__item-wrapper--top::after {
+    position: absolute;
+    right: 103px;
+    top: 354px;
+    content: "";
+    width: 360px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+  }
+
+  .features__item-wrapper--top::before {
+    position: absolute;
+    left: 103px;
+    top: 354px;
+    content: "";
+    width: 360px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+  }
+
+  .features__item-wrapper--bottom {
+    margin-bottom: -18px;
+  }
+
+  .features__item-number-wrapper {
+    margin-right: 40px;
+  }
+
+  .features__item-number--cars {
+    margin-right: 35px;
+  }
+
+  .features__item-number--years {
+    margin-right: 38px;
+  }
+
+  .features__item-name {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .features__item-name--simulators {
+    font-size: 16px;
+    width: 280px;
+    margin-left: 40px;
+  }
+
+  .features__item-number--simulators {
+    padding-top: 53px;
+    margin-left: 127px;
+    margin-bottom: 4px;
+  }
+
+  .features__item-number-unit--simulators {
+    font-size: 26px;
+    margin-left: 112px;
+    margin-bottom: 23px;
+  }
+
+  .features__item-text--years {
+    width: 220px;
+  }
+
+  .features__item--simulators {
+    position: absolute;
+    left: 503px;
+    top: -197px;
+    width: 360px;
+    height: 300px;
   }
 }

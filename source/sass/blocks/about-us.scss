@@ -15,6 +15,10 @@
   line-height: 22px;
 }
 
+.about-us p span {
+  display: none;
+}
+
 .about-us__gym-photo {
   margin-bottom: 32px;
 }
@@ -58,5 +62,52 @@
     width: 270px;
     height: 170px;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__header {
+    font-size: 54px;
+    margin: 116px 0 20px 103px;
+  }
+
+  .about-us__item-header {
+    font-size: 22px;
+    margin: 0 0 92px 104px;
+  }
+
+  .about-us p {
+    text-align: left;
+    width: 355px;
+    margin-left: 104px;
+  }
+
+  .about-us p span {
+    display: inline-block;
+    margin-top: 8px;
+    width: 325px;
+  }
+
+  .about-us p span br {
+    display: inline;
+  }
+
+  .about-us__flex-wrapper {
+    display: flex;
+  }
+
+  .about-us__video {
+    width: 360px;
+    height: 230px;
+    left: 503px;
+    top: 405px;
+  }
+
+  .about-us__gym-photo {
+    width: 660px;
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 144px;
+    margin-bottom: 236px;
   }
 }

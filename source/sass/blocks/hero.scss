@@ -166,3 +166,55 @@
     margin-bottom: 131px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero__logo {
+    width: 130px;
+    height: 26px;
+    margin-left: 103px;
+    margin-right: 852px;
+  }
+
+  .hero__phone {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+
+  .hero__city {
+    font-size: 54px;
+    margin-left: 182px;
+    margin-bottom: 37px;
+  }
+
+  .hero__header {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+    width: 270px;
+    margin: 0;
+  }
+
+  .hero__man-photo {
+    width: 500px;
+    height: 524px;
+    right: 175px;
+    top: 116px;
+  }
+
+  .hero__flex-wrapper {
+    padding-top: 103px;
+    margin-bottom: 40px;
+  }
+
+  .hero__features {
+    margin-left: 250px;
+    margin-top: 182px;
+  }
+
+  .hero__subscription-button {
+    width: 270px;
+    padding: 25px;
+    margin-left: 365px;
+    margin-bottom: 171px;
+  }
+}

@@ -245,3 +245,74 @@
     margin-left: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .offers {
+    margin-bottom: 100px;
+  }
+
+  .offers__wrapper {
+    display: flex;
+    margin-left: 103px;
+  }
+
+  .offers__flex-wrapper {
+    margin-left: 0;
+  }
+
+  .offers__flex-wrapper--offers {
+    flex-direction: column;
+    margin-top: 82px;
+  }
+
+  .offers__flex-wrapper--year {
+    margin-right: 40px;
+  }
+
+  .offers__offer {
+    margin: 0;
+    padding-right: 235px;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .offers__offer-text {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .offers-header {
+    font-size: 54px;
+    margin-top: 96px;
+    margin-left: 631px;
+    margin-bottom: 66px;
+  }
+
+  .offers__year-offer-header {
+    font-size: 26px;
+    margin-top: 39px;
+    margin-left: 45px;
+  }
+
+  .offers__year-offer-price {
+    margin-left: 45px;
+  }
+
+  .offers__year-offer-text {
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 156px;
+  }
+
+  .offers__year-offer-more {
+    margin-left: 45px;
+  }
+
+  .offers__girl-photo {
+    width: 280px;
+    height: 460px;
+  }
+}

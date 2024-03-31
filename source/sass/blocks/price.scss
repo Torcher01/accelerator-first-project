@@ -121,12 +121,12 @@
   }
 
   &:focus {
-    background-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%,rgba(0, 62, 183, 0.8) 96.59%);
+    background-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%, rgba(0, 62, 183, 0.8) 96.59%);
   }
 
   &:hover,
   &:active {
-    background-image: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%,rgb(0, 62, 183) 96.59%);
+    background-image: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%);
   }
 
   &:active {
@@ -224,5 +224,79 @@
     left: 249px;
     bottom: -34px;
     z-index: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__header {
+    font-size: 54px;
+    margin-left: 576px;
+    padding-top: 96px;
+    margin-bottom: 15px;
+  }
+
+  .price__time-choose {
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+
+  .price__time-choose:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .price__buttons-wrapper {
+    width: 350px;
+    margin-left: 508px;
+  }
+
+  .price__cards-wrapper {
+    display: flex;
+    padding-top: 40px;
+    margin-left: 103px;
+    padding-bottom: 100px;
+  }
+
+  .price__item-card {
+    padding-right: 81px;
+  }
+
+  .price__item-card:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .price__item-card-header {
+    font-size: 26px;
+    margin-left: 82px;
+    margin-bottom: 18px;
+    padding-top: 64px;
+  }
+
+  .price__item-card-text {
+    margin-left: 82px;
+    margin-bottom: 91px;
+  }
+  .price__item-card-price-wrapper {
+    margin-left: 97px;
+    margin-bottom: 28px;
+  }
+
+  .price__item-card-buy {
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-left: 82px;
+
+    &:hover {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+
+  .price__weight-plates-img {
+    width: auto;
+    height: auto;
+    left: auto;
+    right: -167px;
+    bottom: -45px;
   }
 }
