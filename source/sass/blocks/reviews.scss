@@ -136,3 +136,54 @@
     transform: rotate(180deg);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin-bottom: 100px;
+  }
+
+  .reviews__header {
+    margin-top: 96px;
+    margin-left: 612px;
+    margin-bottom: 71px;
+  }
+
+  .reviews__review {
+    width: 560px;
+    margin-left: 403px;
+    margin-right: 0;
+  }
+
+  .reviews__switcher {
+    left: 327px;
+    top: 332px;
+  }
+
+  .reviews__switcher--right {
+    left: auto;
+    right: 327px;
+  }
+
+  .reviews__review-avatar {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+
+  .reviews__review-name {
+    margin-left: 170px;
+  }
+
+  .reviews__review-text {
+    width: 325px;
+    margin-left: 170px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__review-text-tablet-br {
+    display: none;
+  }
+
+  .reviews__review-text-desktop-br {
+    display: inline;
+  }
+}

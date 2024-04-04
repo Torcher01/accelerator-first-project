@@ -63,3 +63,18 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__header {
+    margin-top: 56px;
+    margin-left: 0;
+  }
+
+  .contacts__left {
+    margin-right: 129px;
+
+    &:before {
+      left: 237px;
+    }
+  }
+}

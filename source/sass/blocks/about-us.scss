@@ -24,7 +24,106 @@
 }
 
 .about-us__video {
-  margin-bottom: 35px;
+  position: relative;
+  width: 320px;
+  height: 170px;
+  margin-bottom: 39px;
+  border: none;
+  background-color: #000000;
+
+  &:hover .about-us__video-button {
+    border-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:hover .about-us__video-button-gradient-background {
+    display: none;
+  }
+
+  &:hover .about-us__video-button-circle {
+    fill: #fff;
+  }
+
+  &:hover .about-us__video-button-triangle {
+    fill: rgba(16, 38, 84, 0.6);
+  }
+}
+.about-us__video-button-circle {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  fill: none;
+}
+
+.about-us__video-button-triangle {
+  position: absolute;
+  top: 49%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+}
+
+.about-us__video-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: 2px solid #ed0233;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &:focus {
+    border-color: #102654;
+  }
+
+  &:focus .about-us__video-button-gradient-background {
+    display: none;
+  }
+
+  &:focus .about-us__video-button-circle {
+    fill: #c8c9cc;
+  }
+
+  &:focus .about-us__video-button-triangle {
+    fill: #102654;
+  }
+
+  &:active {
+    border-color: #102654;
+  }
+
+  &:active .about-us__video-button-circle {
+    fill: #fff;
+  }
+
+  &:disabled {
+    cursor: auto;
+    border-color: #102654;
+    opacity: 0.3;
+  }
+
+  &:disabled .about-us__video-button-gradient-background {
+    display: none;
+  }
+
+  &:disabled .about-us__video-button-circle {
+    fill: #fff;
+  }
+
+  &:disabled .about-us__video-button-triangle {
+    fill: rgba(16, 38, 84, 0.6);
+  }
+}
+
+.about-us__video-frame {
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +160,21 @@
     top: 488px;
     width: 270px;
     height: 170px;
+    padding-bottom: 0;
     margin: 0;
+  }
+
+  .about-us__video-background {
+    width: 270px;
+  }
+
+  .about-us__video-button-gradient-background {
+    margin-bottom: -1px;
+  }
+
+  .about-us__video-frame {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -101,6 +214,12 @@
     height: 230px;
     left: 503px;
     top: 405px;
+    padding-bottom: 0;
+  }
+
+  .about-us__video-background {
+    width: 360px;
+    height: 230px;
   }
 
   .about-us__gym-photo {
@@ -109,5 +228,28 @@
     margin-top: 120px;
     margin-left: 144px;
     margin-bottom: 236px;
+  }
+
+  .about-us__video-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-us__video-button-gradient-background {
+    width: 72px;
+    height: 72px;
+  }
+
+  .about-us__video-button-circle {
+    width: 72px;
+    height: 72px;
+    top: 50%;
+  }
+
+  .about-us__video-button-triangle {
+    top: 50%;
+    left: 54%;
+    width: 14px;
+    height: 14px;
   }
 }

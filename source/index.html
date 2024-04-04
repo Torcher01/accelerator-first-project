@@ -60,7 +60,32 @@
                height="280" srcset="img/mobile/gym-photo-2x.webp 2x">
         </picture>
       </div>
-      <img class="about-us__video" src="img/mobile/video.webp" alt="" width="320" height="170">
+      <div class="about-us__video">
+        <a class="about-us__video-link" href="https://youtu.be/9TZXsZItgdw?si=qXIt6V064AcqciIS">
+          <picture>
+            <source media="(min-width: 1366px)"
+                    srcset="img/desktop/video-background-1x.webp 1x, img/desktop/video-background-2x.webp 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/tablet/video-background-1x.webp 1x, img/tablet/video-background-2x.webp 2x">
+            <img class="about-us__video-background" src="img/mobile/video-background-1x.webp" width="320" height="170"
+                 alt="Видео о тренажёрном зале" srcset="img/mobile/video-background-2x.webp 2x">
+          </picture>
+        </a>
+        <button class="about-us__video-button" aria-label="Запустить видео">
+          <svg class="about-us__video-button-circle">
+            <use href="/__spritemap#sprite-video-button-circle"></use>
+          </svg>
+          <svg class="about-us__video-button-triangle">
+            <use href="/__spritemap#sprite-video-button-triangle"></use>
+          </svg>
+          <picture>
+            <source media="(min-width: 1366px)"
+                    srcset="img/tablet/video-button-gradient-1x.webp 1x, img/tablet/video-button-gradient-2x.webp 2x">
+            <img class="about-us__video-button-gradient-background" src="img/mobile/video-button-gradient-1x.webp"
+                 alt="" srcset="img/mobile/video-button-gradient-2x.webp 2x">
+          </picture>
+        </button>
+      </div>
     </div>
   </section>
   <section class="price" data-test="price">
@@ -294,61 +319,68 @@
   <section class="faq" data-test="faq">
     <div class="container">
       <h3 class="section-header faq__header">Вопросы и ответы</h3>
-      <div class="faq__buttons-wrapper">
-        <button class="faq__button faq__button--active" type="button">Центр</button>
-        <button class="faq__button" type="button">Абонемент</button>
-        <button class="faq__button" type="button">Услуги</button>
-        <button class="faq__button" type="button">Правила</button>
-      </div>
-      <div class="faq__item">
-        <div class="faq__item-wrapper">
-          <h4 class="faq__item-header">Как стать членом фитнес-центра?</h4>
-          <button class="faq__item-expand" type="button">
-            <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="14" height="14">
-              <use href="/__spritemap#sprite-faq-button-plus"></use>
-            </svg>
-          </button>
+      <div class="faq__flex-wrapper">
+        <div class="faq__buttons-wrapper">
+          <button class="faq__button faq__button--active" type="button">Центр</button>
+          <button class="faq__button" type="button">Абонемент</button>
+          <button class="faq__button" type="button">Услуги</button>
+          <button class="faq__button" type="button">Правила</button>
         </div>
-        <p class="faq__item-text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
-          договор. При покупке абонемента онлайн, анкета<br>также заполняется онлайн и договор придёт вам на почту.</p>
-      </div>
-      <div class="faq__item faq__item--schedule">
-        <div class="faq__item-wrapper">
-          <h4 class="faq__item-header">Где можно посмотреть расписание?</h4>
-          <button class="faq__item-expand" type="button">
-            <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="14" height="14">
-              <use href="/__spritemap#sprite-faq-button-plus"></use>
-            </svg>
-          </button>
+        <div class="faq__items-wrapper">
+          <div class="faq__item">
+            <div class="faq__item-wrapper">
+              <h4 class="faq__item-header">Как стать членом фитнес-центра?</h4>
+              <button class="faq__item-expand" type="button">
+                <span class="visually-hidden">Открыть категорию</span>
+                <svg class="faq__item-expand-icon" width="14" height="14">
+                  <use href="/__spritemap#sprite-faq-button-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="faq__item-text">При первом посещении и покупке абонемента, необходимо заполнить анкету<br> и
+              подписать
+              договор. При покупке абонемента онлайн, анкета <br class="faq__item-text-break">также заполняется онлайн и
+              договор придёт вам на почту.
+            </p>
+          </div>
+          <div class="faq__item faq__item--schedule">
+            <div class="faq__item-wrapper">
+              <h4 class="faq__item-header">Где можно посмотреть расписание?</h4>
+              <button class="faq__item-expand" type="button">
+                <span class="visually-hidden">Открыть категорию</span>
+                <svg class="faq__item-expand-icon" width="14" height="14">
+                  <use href="/__spritemap#sprite-faq-button-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="faq__item-text"></p>
+          </div>
+          <div class="faq__item faq__item--coolers">
+            <div class="faq__item-wrapper">
+              <h4 class="faq__item-header">Есть кулеры в центре? Предоставляются полотенца?</h4>
+              <button class="faq__item-expand faq__item-expand--coolers" type="button">
+                <span class="visually-hidden">Открыть категорию</span>
+                <svg class="faq__item-expand-icon" width="14" height="14">
+                  <use href="/__spritemap#sprite-faq-button-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="faq__item-text"></p>
+          </div>
+          <div class="faq__item faq__item--trainers">
+            <div class="faq__item-wrapper">
+              <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова <br>их
+                квалификация?</h4>
+              <button class="faq__item-expand faq__item-expand--trainers" type="button">
+                <span class="visually-hidden">Открыть категорию</span>
+                <svg class="faq__item-expand-icon" width="14" height="14">
+                  <use href="/__spritemap#sprite-faq-button-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="faq__item-text"></p>
+          </div>
         </div>
-        <p class="faq__item-text"></p>
-      </div>
-      <div class="faq__item faq__item--coolers">
-        <div class="faq__item-wrapper">
-          <h4 class="faq__item-header">Есть кулеры в центре? Предоставляются полотенца?</h4>
-          <button class="faq__item-expand faq__item-expand--coolers" type="button">
-            <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="14" height="14">
-              <use href="/__spritemap#sprite-faq-button-plus"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="faq__item-text"></p>
-      </div>
-      <div class="faq__item faq__item--trainers">
-        <div class="faq__item-wrapper">
-          <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова<br>их
-            квалификация?</h4>
-          <button class="faq__item-expand faq__item-expand--trainers" type="button">
-            <span class="visually-hidden">Открыть категорию</span>
-            <svg class="faq__item-expand-icon" width="14" height="14">
-              <use href="/__spritemap#sprite-faq-button-plus"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="faq__item-text"></p>
       </div>
     </div>
   </section>
@@ -370,8 +402,9 @@
         </picture>
         <span class="reviews__review-name">Анна Орлова</span>
         <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
-          обновляют, персонал дружелюбный.<br class="reviews__review-text-tablet-br"> Зал просторный, даже в вечернее
-          время<br>нет очередей»</p>
+          обновляют, персонал дружелюбный.<br class="reviews__review-text-tablet-br"> Зал просторный,<br
+            class="reviews__review-text-desktop-br"> даже в вечернее
+          время<br class="reviews__review-text-tablet-br"> нет очередей»</p>
       </div>
       <button class="reviews__switcher reviews__switcher--right">
         <svg class="reviews__switcher-icon reviews__switcher-icon--right" width="16" height="32"
@@ -383,43 +416,46 @@
   </section>
   <section class="form" data-test="form">
     <div class="container">
-      <div class="form__wrapper">
-        <h3 class="section-header form__header">Бесплатное занятие</h3>
-        <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__input-wrapper">
-            <label>
-              <span class="visually-hidden">Введите имя</span>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
-            </label>
-            <label>
-              <span class="visually-hidden">Введите телефон</span>
-              <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон" required>
-            </label>
-          </div>
-          <button class="button form__submit-button" type="submit">отправить</button>
-        </form>
-      </div>
-      <div class="form__contacts contacts">
-        <h3 class="contacts__header">Контакты</h3>
-        <div class="contacts__flex-wrapper">
-          <div class="contacts__left">
-            <div class="contacts__item">
-              <span class="contacts__item-name">Адрес:</span>
-              <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
+      <div class="form__flex-wrapper">
+        <div class="form__wrapper">
+          <h3 class="section-header form__header">Бесплатное занятие</h3>
+          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__input-wrapper">
+              <label>
+                <span class="visually-hidden">Введите имя</span>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
+              </label>
+              <label>
+                <span class="visually-hidden">Введите телефон</span>
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон"
+                       required>
+              </label>
             </div>
-            <div class="contacts__item">
-              <span class="contacts__item-name">График работы:</span>
-              <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
+            <button class="button form__submit-button" type="submit">отправить</button>
+          </form>
+        </div>
+        <div class="form__contacts contacts">
+          <h3 class="contacts__header">Контакты</h3>
+          <div class="contacts__flex-wrapper">
+            <div class="contacts__left">
+              <div class="contacts__item">
+                <span class="contacts__item-name">Адрес:</span>
+                <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
+              </div>
+              <div class="contacts__item">
+                <span class="contacts__item-name">График работы:</span>
+                <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
+              </div>
             </div>
-          </div>
-          <div class="contacts__right">
-            <div class="contacts__item contacts__item--tel">
-              <span class="contacts__item-name">Телефон:</span>
-              <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
-            </div>
-            <div class="contacts__item">
-              <span class="contacts__item-name">Email:</span>
-              <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            <div class="contacts__right">
+              <div class="contacts__item contacts__item--tel">
+                <span class="contacts__item-name">Телефон:</span>
+                <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
+              </div>
+              <div class="contacts__item">
+                <span class="contacts__item-name">Email:</span>
+                <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </div>
             </div>
           </div>
         </div>

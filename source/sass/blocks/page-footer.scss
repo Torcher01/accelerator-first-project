@@ -146,3 +146,46 @@
     margin-right: 12px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    width: 130px;
+    height: 26px;
+    margin-top: 40px;
+    margin-left: 103px;
+    margin-right: 158px;
+  }
+
+  .page-footer__links {
+    margin-top: 35px;
+  }
+
+  .page-footer__link {
+    margin-right: 63px;
+    padding: 10px;
+
+    &:hover {
+      padding-bottom: 5px;
+      margin-bottom: 1px;
+    }
+
+    &:focus {
+      padding-bottom: 0;
+      margin-bottom: 1px;
+      outline-offset: 0;
+    }
+  }
+
+  .page-footer__link--subscription {
+    margin-right: 62px;
+  }
+
+  .page-footer__social-links {
+    margin-left: 158px;
+    margin-top: 40px;
+  }
+
+  .page-footer__social-link {
+    margin-right: 7px;
+  }
+}
