@@ -99,6 +99,7 @@
   font-weight: 300;
   line-height: 22px;
   margin: 0 0 0 30px;
+  text-align: center;
 }
 
 .features__item-text--cars {
@@ -210,6 +211,10 @@
 
   .features__item-text--years {
     width: 230px;
+  }
+
+  .features__item-text--cars br{
+    display: none;
   }
 }
 

@@ -8,6 +8,20 @@ const swiper = new Swiper('.juri__slider', {
   modules: [Navigation],
   simulateTouch: false,
 
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 41,
+      simulateTouch: true,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      simulateTouch: true,
+      initialSlide: 2,
+    },
+  },
+
   navigation: {
     nextEl: '.juri__switcher--right',
     prevEl: '.juri__switcher--left',
