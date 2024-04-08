@@ -50,24 +50,15 @@
 
 .faq__item {
   margin-left: 15px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   border-top: 1px solid #74819c;
   width: 290px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
 
-.faq__item--schedule {
-  margin-bottom: -20px;
-}
-
-.faq__item--coolers {
-  margin-bottom: -20px;
-}
-
-.faq__item--trainers {
-  border-bottom: 1px solid #74819c;
-  padding-bottom: 0;
+  &:last-child {
+    border-bottom: 1px solid #74819c;
+  }
 }
 
 .faq__item-header {
@@ -121,6 +112,10 @@
   }
 }
 
+.faq__item-expand--active {
+  background-color: #1c3374;
+}
+
 .faq__item-expand--coolers {
   margin-top: 15px;
 }
@@ -134,7 +129,23 @@
   margin-top: 5px;
 }
 
+.faq__item-expand-icon--disabled {
+  display: none;
+}
+
+.faq__item-collapse-icon {
+  display: none;
+  stroke: #fff;
+  margin-top: 5px;
+  width: 20px;
+  height: 7px;
+}
+.faq__item-collapse-icon--active {
+  display: inline-block;
+}
+
 .faq__item-text {
+  display: none;
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
@@ -177,20 +188,7 @@
     padding-bottom: 25px;
   }
 
-  .faq__item--schedule {
-    margin-bottom: -10px;
-  }
-
-  .faq__item--coolers {
-    margin-bottom: -10px;
-  }
-
-  .faq__item--trainers {
-    padding-top: 11px;
-    padding-bottom: 6px;
-  }
-
-  .faq__item-header {
+  .faq__item-accordion summary{
     font-size: 22px;
     line-height: 22px;
     width: auto;
@@ -199,7 +197,7 @@
     margin-bottom: 18px;
   }
 
-  .faq__item-text {
+  .faq__item-accordion p{
     font-size: 18px;
     line-height: 24px;
     width: 550px;
@@ -234,23 +232,20 @@
     flex-direction: column;
     margin-left: 103px;
     margin-bottom: 0;
+    gap: 0;
   }
 
   .faq__header {
     font-size: 54px;
     padding-top: 96px;
     margin-left: 103px;
-    margin-bottom: 46px;
-  }
-
-  .faq__item-header {
-    font-size: 24px;
+    margin-bottom: 44px;
   }
 
   .faq__button {
     width: 260px;
-    padding-top: 19px;
-    padding-bottom: 13px;
+    height: 54px;
+    padding-top: 20px;
 
     &:not(:last-child) {
       margin-right: 0;
@@ -263,50 +258,38 @@
   }
 
   .faq__item {
-    margin-left: 0;
+    display: flex;
+    margin: 0;
+    padding: 31px 0 22px;
     width: 860px;
-    padding-bottom: 22px;
   }
 
-  .faq__item--schedule {
-    margin-bottom: -22px;
+  .faq__item-accordion summary {
+    display: inline-block;
+    list-style: none;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
   }
 
-  .faq__item--coolers {
-    margin-bottom: -22px;
-  }
-
-  .faq__item--trainers {
-    padding-top: 20px;
-    padding-bottom: 0;
-  }
-
-  .faq__item-header {
-    margin-top: 11px;
-    margin-bottom: 32px;
-  }
-
-  .faq__item-header--trainers {
-    width: auto;
-  }
-
-  .faq__item-header--trainers br {
-    display: none;
-  }
-
-  .faq__item-text {
+  .faq__item-accordion p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
     width: 610px;
-  }
-
-  .faq__item-text-break {
-    display: none;
+    margin: 31px 0 0;
   }
 
   .faq__item-expand {
-    margin-top: 2px;
+    margin-top: -8px;
+    margin-left: auto;
   }
 
   .faq__item-expand-icon {
     margin-top: 5px;
+    stroke: #1c3374;
   }
 }

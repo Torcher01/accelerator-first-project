@@ -1,8 +1,16 @@
 // https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-import './iframe-video.js'
+
+
+import '../sass/vendor/swiper.scss';
+import './juri-slider.js';
+import './subscription-card-hover.js';
+import './subscriptions-switcher.js';
+import './iframe-video.js';
 import './subscription-scroll.js';
-import {setPriceAttribute} from './price-shadow.js';
-setPriceAttribute();
+import './trainer-card-info.js';
+import './faq-tabs-switcher.js';
+import './faq-buttons-accordion.js';
+import './reviews-slider.js';
+import './form-validation.js';
+import {setPriceShadow} from './price-shadow.js';
+setPriceShadow();

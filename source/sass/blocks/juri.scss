@@ -34,11 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .juri__flex-wrapper {
-    display: flex;
-    margin-left: 25px;
-    margin-bottom: 55px;
-  }
 
   .juri__header {
     font-size: 54px;
@@ -122,8 +117,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .juri__flex-wrapper {
-    margin-bottom: 95px;
+  .juri__slider{
+    width: 1160px;
+    margin-bottom: 100px;
   }
 
   .juri__header {
@@ -133,19 +129,95 @@
 
   .juri__member {
     display: block;
+    margin: 0;
+  }
+
+  .juri__member-photo {
+    display: block;
+    margin: 0 auto;
   }
 
   .juri__name {
     display: inline-block;
+    bottom: 23px;
+    left: 66px;
   }
 
   .juri__name--pashkov {
-    left: 41px;
+    left: 43px;
+  }
+
+  .juri__name--lavrov {
+    left: 55px;
   }
 
   .juri__switcher {
-    margin-top: 121px;
-    margin-left: 2px;
-    margin-right: -2px;
+    position: absolute;
+    left: 27px;
+    bottom: 223px;
+    margin: 0;
+  }
+
+  .juri__switcher--right {
+    right: 27px;
+    left: auto;
+  }
+
+  .juri__member-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(16, 38, 84, 0.89);
+    width: 260px;
+    height: 300px;
+    z-index: 0;
+  }
+
+  .juri__member-info--active {
+    z-index: 1;
+  }
+
+  .juri__member-info-name {
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    padding: 44px 0 0 43px;
+  }
+
+  .juri__member-info-category {
+    display: block;
+    font-size: 16px;
+    color: #b6bdcc;
+    padding: 9px 0 0 104px;
+  }
+
+  .juri__member-info-resume {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    margin: 0;
+    padding: 36px 0 0 66px;
+  }
+
+  .juri__member-info-resume-point {
+    position: relative;
+    width: 150px;
+    margin-bottom: 12px;
+    list-style: none;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 7px;
+      left: -16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

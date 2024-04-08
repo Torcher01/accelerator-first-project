@@ -39,6 +39,10 @@
   }
 }
 
+.price__time-choose--active {
+  border-bottom: 2px solid #ed0233;
+}
+
 .price__buttons-wrapper {
   margin-left: 15px;
   margin-right: 15px;
@@ -55,10 +59,16 @@
 .price__item-card {
   background-color: #ffffff;
   position: relative;
+  border: 7px solid transparent;
 
   &:not(:last-child) {
     margin-bottom: 35px;
   }
+}
+
+.price__item-card--hover {
+  border-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%, rgba(0, 62, 183, 0.8) 96.59%);
+  border-image-slice: 1;
 }
 
 .price__item-card-header {
@@ -94,6 +104,7 @@
     z-index: -1;
     top: -49px;
     left: -15px;
+    width: 500px;
     color: #e8e8e8;
     font-size: 80px;
   }
@@ -110,25 +121,6 @@
   margin-left: 47px;
   margin-bottom: 50px;
 
-  &:hover,
-  &:focus {
-    color: #fff
-  }
-
-  &:hover {
-    border: none;
-    padding: 27px 44px;
-  }
-
-  &:focus {
-    background-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%, rgba(0, 62, 183, 0.8) 96.59%);
-  }
-
-  &:hover,
-  &:active {
-    background-image: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%);
-  }
-
   &:active {
     color: rgba(255, 255, 255, 0.7);
   }
@@ -139,6 +131,13 @@
     color: rgba(16, 38, 84, 0.3);
     padding: 25px 42px;
   }
+}
+
+.price__item-card-buy--hover {
+  border: none;
+  padding: 27px 44px;
+  color: #fff;
+  background-image: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%, rgba(0, 62, 183, 0.8) 96.59%);
 }
 
 .price__weight-plates-img {
@@ -197,7 +196,7 @@
     &:before {
       font-size: 100px;
       top: -54px;
-      left: -18px;
+      left: -15%;
     }
   }
 
@@ -257,7 +256,7 @@
   }
 
   .price__item-card {
-    padding-right: 81px;
+    width: 346px;
   }
 
   .price__item-card:not(:last-child) {
@@ -267,29 +266,33 @@
 
   .price__item-card-header {
     font-size: 26px;
-    margin-left: 82px;
     margin-bottom: 18px;
-    padding-top: 64px;
+    padding-top: 57px;
   }
 
   .price__item-card-text {
-    margin-left: 82px;
     margin-bottom: 91px;
   }
   .price__item-card-price-wrapper {
-    margin-left: 97px;
+    margin-left: 90px;
     margin-bottom: 28px;
   }
 
   .price__item-card-buy {
     padding-left: 43px;
     padding-right: 43px;
-    margin-left: 82px;
+    margin-left: 75px;
+    margin-bottom: 58px;
 
     &:hover {
       padding-left: 45px;
       padding-right: 45px;
     }
+  }
+
+  .price__item-card-buy--hover {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .price__weight-plates-img {

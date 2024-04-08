@@ -92,43 +92,51 @@
     <div class="container container--price">
       <h3 class="section-header price__header">Абонементы</h3>
       <div class="price__buttons-wrapper">
-        <button class="price__time-choose" type="button">1 месяц</button>
-        <button class="price__time-choose" type="button">6 месяцев</button>
-        <button class="price__time-choose" type="button">12 месяцев</button>
+        <button class="price__time-choose price__time-choose--active price__time-choose--one-month" type="button">1
+          месяц
+        </button>
+        <button class="price__time-choose price__time-choose--six-month" type="button">6 месяцев</button>
+        <button class="price__time-choose price__time-choose--twelve-month" type="button">12 месяцев</button>
       </div>
       <div class="price__cards-wrapper">
         <div class="price__item-card">
           <h4 class="price__item-card-header">С тренером</h4>
           <p class="price__item-card-text">12 занятий</p>
           <div class="price__item-card-price-wrapper">
-            <p class="price__item-card-price">5000</p>
+            <p class="price__item-card-price price__item-card-price--trainer">5000</p>
             <svg class="price__item-card-ruble-icon" width="24" height="33" role="img" aria-label="Знак рубля">
               <use href="/__spritemap#sprite-ruble-icon"></use>
             </svg>
           </div>
-          <button class="button price__item-card-buy" type="button">Купить абонемент</button>
+          <button class="button price__item-card-buy" type="button" onclick="document.location='new.html'">Купить
+            абонемент
+          </button>
         </div>
         <div class="price__item-card">
           <h4 class="price__item-card-header">Дневной</h4>
           <p class="price__item-card-text">с 8:00 до 17:00</p>
           <div class="price__item-card-price-wrapper">
-            <p class="price__item-card-price">1700</p>
+            <p class="price__item-card-price price__item-card-price--part-time">1700</p>
             <svg class="price__item-card-ruble-icon" width="24" height="33" role="img" aria-label="Знак рубля">
               <use href="/__spritemap#sprite-ruble-icon"></use>
             </svg>
           </div>
-          <button class="button price__item-card-buy" type="button">Купить абонемент</button>
+          <button class="button price__item-card-buy" type="button" onclick="document.location='new.html'">Купить
+            абонемент
+          </button>
         </div>
         <div class="price__item-card">
           <h4 class="price__item-card-header">Полный день</h4>
           <p class="price__item-card-text">с 8:00 до 22:00</p>
           <div class="price__item-card-price-wrapper">
-            <p class="price__item-card-price">2700</p>
+            <p class="price__item-card-price price__item-card-price--full-day">2700</p>
             <svg class="price__item-card-ruble-icon" width="24" height="33" role="img" aria-label="Знак рубля">
               <use href="/__spritemap#sprite-ruble-icon"></use>
             </svg>
           </div>
-          <button class="button price__item-card-buy" type="button">Купить абонемент</button>
+          <button class="button price__item-card-buy" type="button" onclick="document.location='new.html'">Купить
+            абонемент
+          </button>
         </div>
       </div>
       <picture>
@@ -160,7 +168,9 @@
             </div>
           </div>
           <p class="event__description">Ежегодные соревнования по CrossFit</p>
-          <button class="button event__application-fill" type="button">Заполнить заявку</button>
+          <button class="button event__application-fill" type="button" onclick="document.location='new.html'">Заполнить
+            заявку
+          </button>
         </div>
         <picture>
           <source media="(min-width: 1366px)"
@@ -175,43 +185,133 @@
   <section class="juri" data-test="juri">
     <div class="container">
       <h3 class="section-header juri__header">Жюри</h3>
-      <div class="juri__flex-wrapper">
-        <button class="juri__switcher">
-          <svg class="juri__switcher-icon" width="16" height="32" aria-label="Переключить влево">
-            <use href="/__spritemap#sprite-switcher-icon"></use>
-          </svg>
-        </button>
-        <div class="juri__member juri__member--tablet" tabindex="1" aria-label="Член жюри">
-          <img class="juri__member-photo" src="img/juri/anna-pavlova-photo-1x.webp" width="260" height="300"
-               alt="Фотография члена жюри" srcset="img/juri/anna-pavlova-photo-2x.webp 2x">
-          <span class="juri__name juri__member--tablet">Анна Павлова</span>
+      <div class="juri__slider swiper">
+        <div class="juri__slider-wrapper swiper-wrapper">
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/anna-pavlova-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/anna-pavlova-photo-2x.webp 2x">
+            <span class="juri__name juri__member--tablet">Анна Павлова</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/alexey-lavrov-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/alexey-lavrov-photo-2x.webp 2x">
+            <span class="juri__name juri__name--lavrov juri__member--tablet">Алексей Лавров</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/alexandr-pashkov-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/alexandr-pashkov-photo-2x.webp 2x">
+            <span class="juri__name juri__name--pashkov juri__member--mobile">Александр Пашков</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/maria-ketova-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/maria-ketova-photo-2x.webp 2x">
+            <span class="juri__name juri__member--desktop">Мария Кетова</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/new-member-one-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/new-member-one-2x.webp 2x">
+            <span class="juri__name juri__member--tablet">Анна Павлова</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/alexey-lavrov-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/alexey-lavrov-photo-2x.webp 2x">
+            <span class="juri__name juri__name--lavrov juri__member--tablet">Алексей Лавров</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/alexandr-pashkov-photo-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/alexandr-pashkov-photo-2x.webp 2x">
+            <span class="juri__name juri__name--pashkov juri__member--mobile">Александр Пашков</span>
+          </div>
+          <div class="juri__member swiper-slide" tabindex="1" aria-label="Член жюри">
+            <div class="juri__member-info">
+              <span class="juri__member-info-name">Александр Пашков</span>
+              <span class="juri__member-info-category">CrossFit</span>
+              <ul class="juri__member-info-resume">
+                <li class="juri__member-info-resume-point">Certified Level 3 Trainer</li>
+                <li class="juri__member-info-resume-point">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__member-info-resume-point">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <img class="juri__member-photo" src="img/juri/new-member-two-1x.webp" width="260" height="300"
+                 alt="Фотография члена жюри" srcset="img/juri/new-member-two-2x.webp 2x">
+            <span class="juri__name juri__member--desktop">Мария Кетова</span>
+          </div>
         </div>
-        <div class="juri__member juri__member--tablet" tabindex="1" aria-label="Член жюри">
-          <img class="juri__member-photo" src="img/juri/alexey-lavrov-photo-1x.webp" width="260" height="300"
-               alt="Фотография члена жюри" srcset="img/juri/alexey-lavrov-photo-2x.webp 2x">
-          <span class="juri__name juri__name--lavrov juri__member--tablet">Алексей Лавров</span>
-        </div>
-        <div class="juri__member juri__member--mobile" tabindex="1" aria-label="Член жюри">
-          <picture>
-            <source media="(min-width: 768px)"
-                    srcset="img/juri/alexandr-pashkov-photo-1x.webp 1x, img/juri/alexandr-pashkov-photo-2x.webp 2x">
-            <img class="juri__member-photo" src="img/juri/alexandr-pashkov-mobile-1x.webp" width="227" height="280"
-                 alt="Фотография члена жюри" srcset="img/juri/alexandr-pashkov-mobile-2x.webp 2x">
-          </picture>
-          <span class="juri__name juri__name--pashkov juri__member--mobile">Александр Пашков</span>
-        </div>
-        <div class="juri__member juri__member--desktop" tabindex="1" aria-label="Член жюри">
-          <img class="juri__member-photo" src="img/juri/maria-ketova-photo-1x.webp" width="260" height="300"
-               alt="Фотография члена жюри" srcset="img/juri/maria-ketova-photo-2x.webp 2x">
-          <span class="juri__name juri__member--desktop">Мария Кетова</span>
-        </div>
-        <button class="juri__switcher juri__switcher--right">
-          <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32"
-               aria-label="Переключить влево">
-            <use href="/__spritemap#sprite-switcher-icon"></use>
-          </svg>
-        </button>
       </div>
+      <button class="juri__switcher juri__switcher--left swiper-button-prev">
+        <svg class="juri__switcher-icon" width="16" height="32" aria-label="Переключить влево">
+          <use href="/__spritemap#sprite-switcher-icon"></use>
+        </svg>
+      </button>
+      <button class="juri__switcher juri__switcher--right swiper-button-next">
+        <svg class="juri__switcher-icon juri__switcher-icon--right" width="16" height="32"
+             aria-label="Переключить влево">
+          <use href="/__spritemap#sprite-switcher-icon"></use>
+        </svg>
+      </button>
     </div>
   </section>
   <section class="features" data-test="features">
@@ -290,7 +390,7 @@
             <h4 class="offers__year-offer-header">Год</h4>
             <span class="offers__year-offer-price">4999</span>
             <p class="offers__year-offer-text">Безлимитный абонемент в тренажёрный зал</p>
-            <a class="offers__year-offer-more" href="#">подробнее</a>
+            <a class="offers__year-offer-more" href="new.html">подробнее</a>
           </div>
           <picture>
             <source media="(min-width: 1366px)"
@@ -305,12 +405,12 @@
           <div class="offers__offer">
             <h4 class="offers__offer-header">Месяц бесплатно</h4>
             <p class="offers__offer-text">Приведи друга, получи абонемент в подарок</p>
-            <a class="offers__offer-more-info" href="#">подробнее</a>
+            <a class="offers__offer-more-info" href="new.html">подробнее</a>
           </div>
           <div class="offers__offer">
             <h4 class="offers__offer-header offers__offer-header--discount">Скидка 20%</h4>
             <p class="offers__offer-text offers__offer-text--discount">Корпоративный фитнес с командой</p>
-            <a class="offers__offer-more-info" href="#">подробнее</a>
+            <a class="offers__offer-more-info" href="new.html">подробнее</a>
           </div>
         </div>
       </div>
@@ -321,64 +421,79 @@
       <h3 class="section-header faq__header">Вопросы и ответы</h3>
       <div class="faq__flex-wrapper">
         <div class="faq__buttons-wrapper">
-          <button class="faq__button faq__button--active" type="button">Центр</button>
-          <button class="faq__button" type="button">Абонемент</button>
-          <button class="faq__button" type="button">Услуги</button>
-          <button class="faq__button" type="button">Правила</button>
+          <button class="faq__button faq__button-center faq__button--active" type="button">Центр</button>
+          <button class="faq__button faq__button-subscription" type="button">Абонемент</button>
+          <button class="faq__button faq__button-services" type="button">Услуги</button>
+          <button class="faq__button faq__button-rules" type="button">Правила</button>
         </div>
         <div class="faq__items-wrapper">
           <div class="faq__item">
-            <div class="faq__item-wrapper">
-              <h4 class="faq__item-header">Как стать членом фитнес-центра?</h4>
-              <button class="faq__item-expand" type="button">
-                <span class="visually-hidden">Открыть категорию</span>
-                <svg class="faq__item-expand-icon" width="14" height="14">
-                  <use href="/__spritemap#sprite-faq-button-plus"></use>
-                </svg>
-              </button>
-            </div>
-            <p class="faq__item-text">При первом посещении и покупке абонемента, необходимо заполнить анкету<br> и
-              подписать
-              договор. При покупке абонемента онлайн, анкета <br class="faq__item-text-break">также заполняется онлайн и
-              договор придёт вам на почту.
-            </p>
+            <details class="faq__item-accordion" open>
+              <summary>Как стать членом фитнес-центра?</summary>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br>и подписать договор. При
+                покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+            <button class="faq__item-expand faq__item-expand--active" type="button" data-test="toggle">
+              <span class="visually-hidden">Открыть категорию</span>
+              <svg class="faq__item-expand-icon faq__item-expand-icon--disabled" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-plus"></use>
+              </svg>
+              <svg class="faq__item-collapse-icon faq__item-collapse-icon--active" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-minus"></use>
+              </svg>
+            </button>
           </div>
-          <div class="faq__item faq__item--schedule">
-            <div class="faq__item-wrapper">
-              <h4 class="faq__item-header">Где можно посмотреть расписание?</h4>
-              <button class="faq__item-expand" type="button">
-                <span class="visually-hidden">Открыть категорию</span>
-                <svg class="faq__item-expand-icon" width="14" height="14">
-                  <use href="/__spritemap#sprite-faq-button-plus"></use>
-                </svg>
-              </button>
-            </div>
-            <p class="faq__item-text"></p>
+          <div class="faq__item">
+            <details class="faq__item-accordion">
+              <summary>Где можно посмотреть расписание?</summary>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br>и подписать договор. При
+                покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+            <button class="faq__item-expand" type="button" data-test="toggle">
+              <span class="visually-hidden">Открыть категорию</span>
+              <svg class="faq__item-expand-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-plus"></use>
+              </svg>
+              <svg class="faq__item-collapse-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-minus"></use>
+              </svg>
+            </button>
           </div>
-          <div class="faq__item faq__item--coolers">
-            <div class="faq__item-wrapper">
-              <h4 class="faq__item-header">Есть кулеры в центре? Предоставляются полотенца?</h4>
-              <button class="faq__item-expand faq__item-expand--coolers" type="button">
-                <span class="visually-hidden">Открыть категорию</span>
-                <svg class="faq__item-expand-icon" width="14" height="14">
-                  <use href="/__spritemap#sprite-faq-button-plus"></use>
-                </svg>
-              </button>
-            </div>
-            <p class="faq__item-text"></p>
+          <div class="faq__item">
+            <details class="faq__item-accordion">
+              <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br>и подписать договор. При
+                покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+            <button class="faq__item-expand" type="button" data-test="toggle">
+              <span class="visually-hidden">Открыть категорию</span>
+              <svg class="faq__item-expand-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-plus"></use>
+              </svg>
+              <svg class="faq__item-collapse-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-minus"></use>
+              </svg>
+            </button>
           </div>
-          <div class="faq__item faq__item--trainers">
-            <div class="faq__item-wrapper">
-              <h4 class="faq__item-header faq__item-header--trainers">Сколько тренеров работает в клубе и какова <br>их
-                квалификация?</h4>
-              <button class="faq__item-expand faq__item-expand--trainers" type="button">
-                <span class="visually-hidden">Открыть категорию</span>
-                <svg class="faq__item-expand-icon" width="14" height="14">
-                  <use href="/__spritemap#sprite-faq-button-plus"></use>
-                </svg>
-              </button>
-            </div>
-            <p class="faq__item-text"></p>
+          <div class="faq__item">
+            <details class="faq__item-accordion">
+              <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br>и подписать договор. При
+                покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+            <button class="faq__item-expand" type="button" data-test="toggle">
+              <span class="visually-hidden">Открыть категорию</span>
+              <svg class="faq__item-expand-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-plus"></use>
+              </svg>
+              <svg class="faq__item-collapse-icon" width="14" height="14">
+                <use href="/__spritemap#sprite-faq-button-minus"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -387,26 +502,38 @@
   <section class="reviews" data-test="reviews">
     <div class="container">
       <h2 class="section-header reviews__header">Отзывы</h2>
-      <button class="reviews__switcher">
+      <button class="reviews__switcher reviews__switcher--left swiper-button-prev">
         <svg class="reviews__switcher-icon" width="16" height="32"
              aria-label="Переключить влево">
           <use href="/__spritemap#sprite-switcher-icon"></use>
         </svg>
       </button>
-      <div class="reviews__review">
-        <picture>
-          <source media="(min-width: 768px)"
-                  srcset="img/tablet/reviews-img-1x.webp 1x, img/tablet/reviews-img-2x.webp 2x">
-          <img class="reviews__review-avatar" src="img/mobile/reviews-img-1x.webp" width="68" height="68"
-               alt="Аватарка написавшего отзыв" srcset="img/mobile/reviews-img-2x.webp 2x">
-        </picture>
-        <span class="reviews__review-name">Анна Орлова</span>
-        <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры
-          обновляют, персонал дружелюбный.<br class="reviews__review-text-tablet-br"> Зал просторный,<br
-            class="reviews__review-text-desktop-br"> даже в вечернее
-          время<br class="reviews__review-text-tablet-br"> нет очередей»</p>
+      <div class="reviews__review swiper">
+        <div class="reviews__review-wrapper swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 768px)"
+                      srcset="img/tablet/reviews-img-1x.webp 1x, img/tablet/reviews-img-2x.webp 2x">
+              <img class="reviews__review-avatar" src="img/mobile/reviews-img-1x.webp" width="68" height="68"
+                   alt="Аватарка написавшего отзыв" srcset="img/mobile/reviews-img-2x.webp 2x">
+            </picture>
+            <span class="reviews__review-name">Анна Орлова</span>
+            <p class="reviews__review-text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+              тренажёры
+              обновляют, персонал дружелюбный.<br class="reviews__review-text-tablet-br"> Зал просторный,<br
+                class="reviews__review-text-desktop-br"> даже в вечернее
+              время<br class="reviews__review-text-tablet-br"> нет очередей»</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="reviews__review-avatar" src="img/tablet/reviews-img-new-1x.webp" width="80" height="80"
+                 alt="Аватарка написавшего отзыв" srcset="img/tablet/reviews-img-new-2x.webp 2x">
+            <span class="reviews__review-name">Кристина Смирнова</span>
+            <p class="reviews__review-text">«Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть
+              детская комната. Часто проводят акции, цены доступные.»</p>
+          </div>
+        </div>
       </div>
-      <button class="reviews__switcher reviews__switcher--right">
+      <button class="reviews__switcher reviews__switcher--right swiper-button-next">
         <svg class="reviews__switcher-icon reviews__switcher-icon--right" width="16" height="32"
              aria-label="Переключить вправо">
           <use href="/__spritemap#sprite-switcher-icon"></use>
@@ -421,11 +548,11 @@
           <h3 class="section-header form__header">Бесплатное занятие</h3>
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__input-wrapper">
-              <label>
+              <label class="form__name-label">
                 <span class="visually-hidden">Введите имя</span>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
               </label>
-              <label>
+              <label class="form__phone-label">
                 <span class="visually-hidden">Введите телефон</span>
                 <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон"
                        required>
